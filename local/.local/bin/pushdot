@@ -11,5 +11,5 @@ if [ -n "$(git status - porcelain)" ]; then
 else
     git status
     notify-send "Pushing data to remote server!!!"
-    git push -u origin master
+    git push
 fi

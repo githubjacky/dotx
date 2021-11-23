@@ -1,0 +1,15 @@
+2021/11/16-17:15:24.788 98b6 Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/16-17:15:24.789 98b6 Recovering log #15
+2021/11/16-17:15:24.789 98b6 Reusing old log /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000015.log 
+2021/11/16-17:15:45.135 98b6 Level-0 table #20: started
+2021/11/16-17:15:45.140 98b6 Level-0 table #20: 9702 bytes OK
+2021/11/16-17:15:45.143 98b6 Delete type=0 #15
+2021/11/16-17:15:45.143 98b6 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/11/16-17:15:45.144 98b6 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\\x05\xe8y\x80\xd2wB\x00\x03\x00\x00\x00\x00\x00\x00(@' @ 411 : 1
+2021/11/16-17:15:45.144 98b6 Compacting 1@1 + 1@2 files
+2021/11/16-17:15:45.147 98b6 Generated table #21@1: 40 keys, 1074 bytes
+2021/11/16-17:15:45.147 98b6 Compacted 1@1 + 1@2 files => 1074 bytes
+2021/11/16-17:15:45.150 98b6 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/16-17:15:45.150 98b6 Delete type=2 #20
+2021/11/16-17:15:45.150 98b6 Delete type=2 #17
+2021/11/16-17:15:45.151 98b6 Manual compaction at level-1 from '\x00\x02\x01\x1f\x04\x03\x01\x03\x00N\x00E\x00W\x03\x00\x00\x00\x00\x00\x00L@\x03\\x05\xe8y\x80\xd2wB\x00\x03\x00\x00\x00\x00\x00\x00(@' @ 411 : 1 .. (end); will stop at (end)

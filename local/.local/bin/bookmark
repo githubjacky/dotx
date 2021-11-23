@@ -1,0 +1,125 @@
+#!/bin/sh
+
+qd="$HOME/.config/qutebrowser/quickmarks"
+readarray -t qdlist < $qd  # create the array
+
+# split the name and the link
+bdname=$(printf '%s\n' "${qdlist[@]}" | awk '{print $1}')
+bdurl=$(printf '%s\n' "${qdlist[@]}" | awk '{print $2}')
+
+# pipe the dmenu
+choice=$(printf '%s\n' "🔎search" "📒reading-list" "🃏course" "${bdname[@]}" | rofi -dmenu -p "book mark 📡:")
+
+# reading-list or bookmar
+if [ "$choice" == "📒reading-list" ]; then
+    reading-list
+elif [ "$choice" == "🃏course" ]; then
+    ntu_course_bookmark
+elif [ "$choice" == "🔎search" ]; then
+    pick=$(echo "" | rofi -dmenu -p "search 🔎:")
+
+    IFS=\  read -ra arr <<< $pick
+    engine=${arr[0]}
+    word=""
+    for w in ${arr[@]}; do
+        [ $w != $engine ] && word+=" $w"
+    done
+
+    if [ $engine == "yt" ]; then
+        browser="brave"
+    else
+        browser=$(echo -e "🦁brave\n🎲qute-browser" | rofi -dmenu -p "choose the browser🌍 ")
+    fi
+
+    if [ $browser == "🎲qutebrowser" ]; then
+        mode=$(echo -e "🌕window\n🌗tab" | rofi -dmenu -p "choose the mode🌛 ")
+        case $engine in
+            "d")
+                if [ $mode == "🌕window" ]; then
+                    $BROWSER "--target" "window" "https://start.duckduckgo.com/?q=$word"
+                else
+                    $BROWSER "--target" "tab" "https://start.duckduckgo.com/?q=$word"
+                fi ;;
+            "dic")
+                if [ $mode == "🌕window" ]; then
+                    $BROWSER "--target" "window" "https://dictionary.cambridge.org/dictionary/english/$word"
+                else
+                    $BROWSER "--target" "tab" "https://dictionary.cambridge.org/dictionary/english/$word"
+                fi ;;
+            "aw")
+                if [ $mode == "🌕window" ]; then
+                    if [ $word == "d" ]; then
+                        $BROWSER "--target" "window" "https://wiki.archlinux.org"
+                    else
+                        $BROWSER "--target" "window" "https://wiki.archlinux.org/index.php?search=$word"
+                    fi 
+                else
+                    if [ $word == "d" ]; then
+                        $BROWSER "--target" "tab" "https://wiki.archlinux.org"
+                    else
+                        $BROWSER "--target" "tab" "https://wiki.archlinux.org/index.php?search=$word"
+                    fi 
+                fi ;;
+            "wk")
+                if [ $mode == "🌕window" ]; then
+                    $BROWSER "--target" "window" "https://en.wikipedia.org/wiki/$word"
+                else
+                    $BROWSER "--target" "tab" "https://en.wikipedia.org/wiki/$word"
+                fi ;;
+            "mc")
+                if [ $mode == "🌕window" ]; then
+                    $BROWSER "--target" "window" "https://www.microsoft.com/en-us/search?q=$word"
+                else
+                    $BROWSER "--target" "tab" "https://www.microsoft.com/en-us/search?q=$word"
+                fi ;;
+        esac
+    else
+        case $engine in
+            "yt")
+                if [ $word == "d" ]; then
+                    brave "https://www.youtube.com"
+                else
+                    brave "https://www.youtube.com/results?search_query=$word"
+                fi ;;
+            "d")
+                brave "https://start.duckduckgo.com/?q=$word" ;;
+            "dic")
+                brave  "https://dictionary.cambridge.org/dictionary/english/$word" ;;
+            "aw")
+                if [ $word == "d" ]; then
+                    brave "https://wiki.archlinux.org"
+                else
+                    brave "https://wiki.archlinux.org/index.php?search=$word"
+                fi ;;
+            "wk")
+                brave "https://en.wikipedia.org/wiki/$word" ;;
+            "mc")
+                brave "https://www.microsoft.com/en-us/search?q=$word" ;;
+
+        esac
+    fi
+else
+    # find the index
+    declare -a array=($bdname $bdurl)
+    n=$((${#array[*]}/2))  # nmber of the element
+    for ((i=0; i<$n; i++)); do
+        if [ "${array[$i]}" == "$choice" ]; then
+            index=$(($i+$n))
+            if [ $choice == "🧶excel" ]; then
+                brave "${array[$index]}"
+            else
+                browser=$(echo -e "🦁brave\n🎲qute-browser" | rofi -dmenu -p "choose the browser🌍 ")
+                if [ $browser == "🎲qute-browser" ]; then
+                    mode=$(echo -e "🌕window\n🌗tab" | rofi -dmenu -p "choose the mode 📺")
+                    if [ $mode == "🌕window" ]; then
+                        $BROWSER "--target" "window" "${array[$index]}"
+                    else
+                        $BROWSER "--target" "tab" "${array[$index]}"
+                    fi 
+                else
+                    brave "${array[$index]}"
+                fi
+            fi
+        fi
+    done
+fi

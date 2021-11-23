@@ -1,0 +1,44 @@
+#/bin/sh
+
+function source_theme_file() {
+    theme="$ZDOTDIR/source/theme"
+    if [ -d "$theme/$1" ]; then 
+        if [ -f "$theme/$1/$1.plugin.zsh" ]; then 
+            source "$theme/$1/$1.plugin.zsh"
+        else
+            source "$theme/$1/$1.zsh"
+        fi
+    else
+        [ -f "$theme/$1.sh" ] && source "$theme/$1.sh"
+    fi
+}
+
+function source_tool_file() {
+    [ -f "$ZDOTDIR/source/tool/$1" ] && source "$ZDOTDIR/source/tool/$1"
+}
+
+function zsh_add_completion() {
+    PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
+    if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then 
+        # For completions
+		completion_file_path=$(ls $ZDOTDIR/plugins/$PLUGIN_NAME/_*)
+		fpath+="$(dirname "${completion_file_path}")"
+        zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh"
+    else
+        git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_NAME"
+		fpath+=$(ls $ZDOTDIR/plugins/$PLUGIN_NAME/_*)
+        [ -f $ZDOTDIR/.zccompdump ] && $ZDOTDIR/.zccompdump
+    fi
+	completion_file="$(basename "${completion_file_path}")"
+	if [ "$2" = true ] && compinit "${completion_file:1}"
+}
+# ranger setting 
+function ranger_cd() {
+    temp_file="$(mktemp -t "ranger_cd.XXXXXXXXXX")"
+    ranger --choosedir="$temp_file" -- "${@:-$PWD}"
+    if chosen_dir="$(cat -- "$temp_file")" && [ -n "$chosen_dir" ] && [ "$chosen_dir" != "$PWD" ]; then
+        cd -- "$chosen_dir"
+    fi
+    rm -f -- "$temp_file"
+}
+

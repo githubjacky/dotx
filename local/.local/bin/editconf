@@ -1,0 +1,63 @@
+#!/bin/sh
+
+declare -a edit=(
+"🍄editconf"
+"☄️alacritty"
+"🦔xmonad"
+"🧊xinitrc"
+"🍢setup_arch"
+"🍩polybar"
+"📒reading-list"
+"📎bookmark"
+"🔔notify"
+"🃏ntu_course_bookmark"
+"🧰other"
+)
+
+choice=$(printf '%s\n' "${edit[@]}" | rofi -dmenu -p "edit the file🗂")
+editor="st"
+
+case $choice in
+    "☄️alacritty")
+        dir="$HOME/.config/alacritty"
+        cd $dir
+        $editor -e $EDITOR $dir/alacritty.yml ;;
+    "🦔xmonad")
+        dir="$HOME/.config/xmonad"
+        cd $dir
+        $editor -e $EDITOR $dir/xmonad.hs ;;
+    "🧊xinitrc")
+        dir="$HOME/.config/x11"
+        cd $dir
+        $editor -e $EDITOR $dir/xinitrc ;;
+    "🍢setup_arch")
+        dir="$HOME/repo/github/os_set/arch"
+        cd $dir
+        $editor -e $EDITOR $dir/install.sh ;;
+    "🍩polybar")
+        dir="$HOME/.config/polybar"
+        cd $dir
+        $editor -e $EDITOR $dir/config.ini ;;
+    "🍄editconf")
+        dir="$HOME/.local/bin"
+        cd $dir
+        $editor -e $EDITOR $dir/editconf ;;
+    "📒reading-list")
+        dir="$HOME/.local/bin"
+        cd $dir
+        $editor -e $EDITOR $dir/reading-list ;;
+    "📎bookmark")
+        dir="$HOME/.config/qutebrowser"
+        cd $dir
+        $editor -e $EDITOR $dir/quickmarks ;;
+    "🔔notify")
+        dir="$HOME/.local/bin"
+        cd $dir
+        $editor -e $EDITOR $dir/notify ;;
+    "🃏ntu_course_bookmark")
+        dir="$HOME/.local/bin"
+        cd $dir
+        $editor -e $EDITOR $dir/ntu_course_bookmark ;;
+    "🧰other")
+        $editor -e "ranger" ;;
+esac

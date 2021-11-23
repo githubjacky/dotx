@@ -1,0 +1,9 @@
+#!/bin/sh
+
+alias ls="exa -1a --icons"
+alias ll="exa -al --icons"
+alias ..="cd .."
+alias mv="mv -i"
+alias rm="rm -i"
+alias v="nvim"
+alias luamake=/home/jacky/.local/share/nvim/lua-language-server/3rd/luamake/luamake

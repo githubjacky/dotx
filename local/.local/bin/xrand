@@ -1,0 +1,18 @@
+#!/bin/sh
+
+intern=eDP-1
+extern=HDMI-1
+show=false
+
+if xrandr | grep "$extern disconnected"; then
+    xrandr --output "$extern" --off --output "$intern" --auto
+    notify-send "HDMI-1 is not connected"
+else
+    pos=$(echo -e "one-monitor\ndual-monitor" | rofi -dmenu -p "workflow 🦖:")
+    if [ $pos == "one-monitor" ]; then
+        xrandr --output "$intern" --off --output "$extern" --auto
+    else
+        xrandr --output "$intern" --auto --below "$extern"
+    fi
+fi
+

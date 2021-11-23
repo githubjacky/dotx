@@ -1,0 +1,22 @@
+#!/bin/sh
+place=$(echo -e "📸screenshot\n🃏lecture-note" | rofi -dmenu -p "where do you what to store👣")
+
+if [ $place == "🃏lecture-note" ]; then
+    found=false
+    dir=$(echo -e "derivative-market\ndigital-circuit\ngame-theory\ncomputer-introduction\nlinear-algebra\npython-excel" | rofi -dmenu)
+    wd="$HOME/Document/google-drive/ntu_lecture/note/$dir/screenshot/"
+    while not $found; do
+        tar="$(ls -a $wd | rofi -dmenu -p "directory? filname🪖: ")"
+        if [ ! -d "$wd/$tar" ]; then
+            directory="$wd"
+            found=true
+        else
+            wd+=$tar
+        fi
+    done
+
+    maim -s "$directory/$tar"
+else
+    filename="$(rofi -dmenu -p "filname🪖: ")"
+    maim -s "~/Document/picture/screenshot/$filename"
+fi

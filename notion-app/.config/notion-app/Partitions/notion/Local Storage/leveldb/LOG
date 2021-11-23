@@ -1,0 +1,23 @@
+2021/11/21-15:32:34.874 1189b Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2021/11/21-15:32:34.875 1189b Recovering log #2497
+2021/11/21-15:32:34.878 1189b Level-0 table #2500: started
+2021/11/21-15:32:34.887 1189b Level-0 table #2500: 10773 bytes OK
+2021/11/21-15:32:34.893 1189b Delete type=0 #2497
+2021/11/21-15:42:41.706 1183f Level-0 table #2503: started
+2021/11/21-15:42:41.716 1183f Level-0 table #2503: 23176 bytes OK
+2021/11/21-15:42:41.719 1183f Delete type=0 #2501
+2021/11/21-15:42:41.719 1189b Compacting 4@0 + 1@1 files
+2021/11/21-15:42:41.726 1189b Generated table #2504@0: 523 keys, 56356 bytes
+2021/11/21-15:42:41.726 1189b Compacted 4@0 + 1@1 files => 56356 bytes
+2021/11/21-15:42:41.729 1189b compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/11/21-15:42:41.729 1189b Delete type=2 #2498
+2021/11/21-15:42:41.729 1189b Delete type=2 #2494
+2021/11/21-15:42:41.729 1189b Delete type=2 #2500
+2021/11/21-15:42:41.729 1189b Delete type=2 #2496
+2021/11/21-15:42:41.729 1189b Delete type=2 #2503
+2021/11/21-15:52:41.706 1189b Level-0 table #2506: started
+2021/11/21-15:52:41.710 1189b Level-0 table #2506: 10776 bytes OK
+2021/11/21-15:52:41.714 1189b Delete type=0 #2502
+2021/11/21-16:02:41.706 1189b Level-0 table #2508: started
+2021/11/21-16:02:41.710 1189b Level-0 table #2508: 10776 bytes OK
+2021/11/21-16:02:41.713 1189b Delete type=0 #2505

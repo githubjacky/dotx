@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd $HOME/repo/github/os_set/macOS-Simple-KVM/
+./basic.sh

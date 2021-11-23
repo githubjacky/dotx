@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# low battery notification
+function lowbettery(){
+    standard=20
+    while true; do
+        battery=$(cat /sys/class/power_supply/BAT1/capacity)
+        status=$(cat /sys/class/power_supply/BAT1/status)
+        if [ $battery == $standard ] && [ $status != "Charging" ]; then
+            notify-send -u critical "💡low battery warning" "the capacity of battery is lower than 20%"
+            standard=5
+            sleep 600s
+        else
+            standard=20
+            sleep 1s
+        fi
+    done
+}
+
+
+lowbettery

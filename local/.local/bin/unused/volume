@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case "$1" in
+    -v) amixer sset Master unmute 
+            amixer sset Speaker unmute ;; 
+    -m) amixer sset Master mute ;;
+    -u) amixer sset Master 10%+ ;;
+    -d) amixer sset Master 10%- ;;
+esac

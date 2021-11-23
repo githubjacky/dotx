@@ -1,0 +1,24 @@
+#!/bin/sh
+
+intern=eDP-1
+extern=HDMI-1
+show=false
+
+while true; do
+    if xrandr | grep "$extern disconnected"; then
+        xrandr --output "$extern" --off --output "$intern" --auto
+        show=false
+    else
+        if [ show == false ]; then
+            pos=$(echo -e "one-monitor\ndual-monitor" | rofi -dmenu -p "workflow 🦖:")
+            if [ $pos == "one-monitor" ]; then
+                xrandr --output "$intern" --off --output "$extern" --auto
+            else
+                xrandr --output "$intern" --auto --below "$extern"
+            fi
+            show=true
+        fi
+    fi
+    sleep 3s
+done
+

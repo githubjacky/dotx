@@ -1,0 +1,38 @@
+#!/bin/sh
+
+
+declare -a options=(
+"🗝lock"
+"⚒reboot"
+"🔌poweroff"
+"🕰suspend"
+)
+
+choice=$(printf "%s\n" "${options[@]}" | rofi -dmenu -p "shut the computer🖥  ")
+
+case $choice in
+    "🗝lock")
+        if [ "$(echo -e "Yes\nNo" | rofi -dmenu -p "lock the computer🔑")" == "Yes" ]; then
+            slock
+        fi
+        ;;
+    "⚒reboot")
+        if [ "$(echo -e "Yes\nNo" | rofi -dmenu -p "reboot⚙️")" == "Yes" ]; then
+            systemctl reboot
+        fi
+        ;;
+    "🔌poweroff")
+        if [ "$(echo -e "Yes\nNo" | rofi -dmenu -p "poweroff⚰️")" == "Yes" ]; then
+            systemctl poweroff
+        fi
+        ;;
+    "🕰suspend")
+        if [ "$(echo -e "Yes\nNo" | rofi -dmenu -p "suspend🔩")" == "Yes" ]; then
+            systemctl suspend
+            slock
+        fi
+        ;;
+     
+esac
+
+

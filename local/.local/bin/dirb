@@ -1,0 +1,15 @@
+#!/bin/sh
+
+found=false
+dir=$(echo -e "derivative-market\ndigital-circuit\ngame-theory\ncomputer-introduction\nlinear-algebra\npython-excel" | rofi -dmenu)
+wd="$HOME/Document/google-drive/ntu_lecture/lecture/$dir/screenshot/"
+
+while not $found; do
+    tar="$(ls -a $wd | rofi -dmenu)"
+    if [ $tar == "exit" ]; then
+        echo "$wd" 
+        found=true
+    else
+        wd+=$tar
+    fi
+done

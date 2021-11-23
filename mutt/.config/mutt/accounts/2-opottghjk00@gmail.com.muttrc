@@ -1,0 +1,28 @@
+# vim: filetype=neomuttrc
+# muttrc file for account opottghjk00@gmail.com
+set realname = "opottghjk00"
+set from = "opottghjk00@gmail.com"
+set sendmail = "msmtp -a opottghjk00@gmail.com"
+alias me opottghjk00 <opottghjk00@gmail.com>
+set folder = "/home/jacky/.local/share/mail/opottghjk00@gmail.com"
+set header_cache = /home/jacky/.cache/mutt-wizard/opottghjk00@gmail.com/headers
+set message_cachedir = /home/jacky/.cache/mutt-wizard/opottghjk00@gmail.com/bodies
+set mbox_type = Maildir
+
+
+bind index,pager gg noop
+bind index,pager g noop
+bind index,pager M noop
+bind index,pager C noop
+bind index gg first-entry
+unmailboxes *
+unalternates *
+unset signature
+unmacro index o
+macro index o "<shell-escape>mw -y opottghjk00@gmail.com<enter>" "run mbsync to sync opottghjk00@gmail.com"
+
+mailboxes "=INBOX" "=[Gmail]/&UWiQ6JD1TvY-" "=[Gmail]/&V4NXPmh2-" "=[Gmail]/&V4NXPpD1TvY-" "=[Gmail]/&W8RO9lCZTv0-" "=[Gmail]/&XfJSoGYfhl8-" "=[Gmail]/&g0l6Pw-" "=[Gmail]/&kc2JgZD1TvY-"
+macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
+macro index,pager Mi ";<save-message>=INBOX<enter>" "move mail to inbox"
+macro index,pager Ci ";<copy-message>=INBOX<enter>" "copy mail to inbox"
+set spoolfile = "+INBOX"

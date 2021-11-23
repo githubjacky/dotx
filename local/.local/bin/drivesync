@@ -1,0 +1,15 @@
+#!/bin/sh
+
+cd "$HOME/Document/google-drive"
+
+option=$(echo -e "download\nupload" | rofi -dmenu -p "movement🤠")
+
+case $option in
+    "download")
+        grive -f
+        notify-send "download is finished" ;;
+    "upload")
+        grive -u 
+        notify-send "upload is finished" ;;
+esac
+

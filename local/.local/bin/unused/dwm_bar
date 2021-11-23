@@ -1,0 +1,75 @@
+#!/bin/sh
+
+
+
+dwm_date () {
+    printf "\x03🗓%s" "$(date "+%A, %b %d %H:%M")"
+}
+
+
+dwm_battery () {
+    # Change BAT1 to whatever your battery is identified as. Typically BAT0 or BAT1
+    CHARGE=$(cat /sys/class/power_supply/BAT1/capacity)
+    STATUS=$(cat /sys/class/power_supply/BAT1/status)
+    if [ "$STATUS" = "Charging" ]; then
+        printf "\x06💥%s%%" "$CHARGE"
+    else
+        printf "\x06🔋%s%%" "$CHARGE"
+    fi
+}
+
+
+
+
+dwm_networkmanager () {
+    net=$(nmcli -a | grep 'Wired connection' | awk 'NR==1{print $1}')
+    icon=🌀
+    if [ "$net" == "" ]; then
+        net=$(nmcli -t -f active,ssid dev wifi | grep '^yes' | cut -c 5-)
+        icon=📶
+        if [ "$net" == "" ]; then
+            net='no connection'
+            icon=❌
+        fi
+    fi
+    PUBLIC=$(curl -s https://ipinfo.io/ip)
+
+    printf "\x07$icon$net"
+}
+
+dwm_backliht() {
+    current_light=/sys/class/backlight/intel_backlight/brightness
+    max_light=/sys/class/backlight/intel_backlight/max_brightness
+
+    current=$(cat $current_light)
+    max=$(cat $max_light)
+    percent=$(($current*100/$max))
+
+    printf "\x04💡%s%%" "$percent"
+
+}
+
+dwm_volume() {
+    STATUS=$(amixer sget Master | tail -n1 | sed -r "s/.*\[(.*)\]/\1/")
+    VOL=$(amixer get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
+    if [ "$STATUS" = "off" ]; then
+    		printf "\x05🔇"
+    	else
+	        # removed this line because it may get confusing
+        if [ "$VOL" -gt 0 ] && [ "$VOL" -le 33 ]; then
+	            printf "\x05🔈%s%%" "$VOL"
+	        elif [ "$VOL" -gt 33 ] && [ "$VOL" -le 66 ]; then
+	            printf "\x05🔉%s%%" "$VOL"
+	        else
+	            printf "\x05🔊%s%%" "$VOL"
+        	fi
+    fi
+}
+
+# Update dwm status bar every minute
+
+while true; do
+    xsetroot -name " $(dwm_backliht) $(dwm_networkmanager) $(dwm_battery) $(dwm_date)"
+    sleep 1s
+done
+

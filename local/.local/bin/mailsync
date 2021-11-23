@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mail=$(echo -e "ntu\ngmail" | rofi -dmenu -p "select the email address")
+
+case $mail in 
+    ntu)
+        mbsync -c ~/.config/isync/mbsyncrc b08303033@ntu.edu.tw ;;
+    gmail)
+        mbsync -c ~/.config/isync/mbsyncrc opottghjk00@gmail.com ;;
+esac
+    

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/jacky/Download'
+let g:netrw_dirhist_8='/home/jacky/.config/tint2'
+let g:netrw_dirhist_7='/home/jacky/Document/ntu'
+let g:netrw_dirhist_6='/home/jacky/.config/xmonad'
+let g:netrw_dirhist_5='/home/jacky/.config/qutebrowser'
+let g:netrw_dirhist_4='/home/jacky/.config/xmonad'
+let g:netrw_dirhist_3='/var/cache/aura/vcs/mutt-wizard-git/mutt-wizard-git/pkg/mutt-wizard-git/usr/bin'
+let g:netrw_dirhist_2='/usr/share/mutt-wizard'
+let g:netrw_dirhist_1='/usr/share'
+let g:netrw_dirhist_0='/home/jacky/dotfile/mutt/.config/mutt/sent'

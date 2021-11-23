@@ -1,0 +1,99 @@
+import:
+    - ~/.config/alacritty/themes/nord.yml
+background_opacity: 1.0
+
+font:
+  normal:
+    family: JetBrains Mono Nerd Font
+    style: Regular
+
+  bold: 
+    famil: JetBrains Mono Font Complete
+    style: Bold
+
+  italic:
+    family: JetBrains Mono Nerd Font Complete
+    style: Italic
+
+  bold italic:
+    family: JetBrains Mono Nerd Font Complete
+    style: Bold Italic
+  # Point size
+  size: 20.0
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 2
+    y: 2
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 10
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+
+
+cursor:
+  style: Underline
+  unfocused_hallow: true
+  vi_mode_style: Block
+  
+
+key_bindings:
+  - { key: P,        mods: Control,       action: Paste            }
+  - { key: Y,        mods: Control,       action: Copy             }
+  - { key: Plus,     mods: Control,       action: IncreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+  - { key: S,        mods: Alt,           chars: "sudo aura -S " }
+  - { key: A,        mods: Alt,           chars: "sudo aura -A " }
+  - { key: R,        mods: Alt,           chars: "sudo aura -Rs "}
+  - { key: K,        mods: Alt,           chars: "km2217ob4b"      }
+  - { key: G,        mods: Alt,           chars: "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"}
+  - { key: N,        mods: Alt,           chars: "nmcli device wifi list"    }
+  - { key: M,        mods: Alt,           chars: "nmcli device wifi connect Jacky password dxff9ez0k0002"    }
+  - { key: J,        mods: Alt,           chars: "jupytext --set-formats ipynb,py:percent" }
+  - { key: Q,        mods: Alt,           chars: "xmonad --recompile; xmonad --restart" }
+  - { key: P,        mods: Alt,           chars: "ssh bbsu@ptt.cc" }
+    
+
+  # Vi Mode
+  - { key: V,  mods: Control,                 action: ToggleViMode            }
+  - { key: G,                           mode: Vi, action: ScrollToTop             }
+  - { key: G,      mods: Shift,         mode: Vi, action: ScrollToBottom          }
+  - { key: E,      mods: Control,       mode: Vi, action: ScrollHalfPageUp        }
+  - { key: D,      mods: Control,       mode: Vi, action: ScrollHalfPageDown      }
+  - { key: K,      mods: Control,       mode: Vi, action: Up                      }
+  - { key: J,      mods: Control,       mode: Vi, action: Down                    }
+  - { key: H,      mods: Control,       mode: Vi, action: Left                    }
+  - { key: L,      mods: Control,       mode: Vi, action: Right                   }
+  - { key: V,                           mode: Vi, action: ToggleNormalSelection   }
+  - { key: V,      mods: Shift,         mode: Vi, action: ToggleLineSelection     }
+  - { key: Slash,                       mode: Vi, action: SearchForward           }
+  - { key: Slash,  mods: Shift,         mode: Vi, action: SearchBackward          }
+  - { key: K,      mods: Shift,         mode: Vi, action: SearchPrevious          }
+  - { key: J,      mods: Shift,         mode: Vi, action: SearchNext              }
+  - { key: Y,      mods: control,       mode: Vi, action: Copy                    }
+  - { key: P,      mods: control,       mode: Vi, action: Paste                   }
+  - { key: B,      mods: Shift,         mode: Vi, action: WordLeft                }
+  - { key: W,      mods: control,       mode: Vi, action: WordRight               }
+  - { key: L,      mods: Shift,         mode: Vi, action: WordRightEnd            }
+

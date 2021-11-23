@@ -1,0 +1,68 @@
+#!/bin/sh
+declare -a reading=(
+🦾coursera-algorithm
+🦾coursera-algorithm-specialization
+📽yt-algorithm
+📽yt-dataStruter
+📽yt-graph-theory-algorithm
+💾github-arch-installation-script
+)
+
+pick=$(printf "%s\n" "${reading[@]}" | rofi -dmenu -p "reading list📒 ")
+
+function not_yt(){
+    title=$(echo $pick | awk -F "-" '{print $1}')
+    if [ $title == "📽yt" ];then
+        return 1  #return false
+    else
+        return 0  #return true
+    fi
+}
+
+if not_yt; then
+    brow=$(echo -e "🦁brave\n🎲qute-browser" | rofi -dmenu -p "choose the browser🌍")
+    if [ $brow == "🎲qute-browser" ]; then
+        mode=$(echo -e "🌕window\n🌗tab" | rofi -dmenu -p "choose the mode🌛 ")
+    fi
+fi
+
+case $pick in
+    "🦾coursera-algorithm")
+        if [ $brow == "🦁brave" ]; then
+            brave "https://www.coursera.org/learn/algorithms-part1?ranMID=40328&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-SDXH3N2CHZ0FjE59ZxA3sQ&siteID=JVFxdTr9V80-SDXH3N2CHZ0FjE59ZxA3sQ"
+        else
+            if [ $mode == "🌕window" ]; then
+                $BROWSER "--target" "window" "https://www.coursera.org/learn/algorithms-part1?ranMID=40328&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-SDXH3N2CHZ0FjE59ZxA3sQ&siteID=JVFxdTr9V80-SDXH3N2CHZ0FjE59ZxA3sQ" 
+            else
+                $BROWSER "--target" "tab" "https://www.coursera.org/learn/algorithms-part1?ranMID=40328&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-SDXH3N2CHZ0FjE59ZxA3sQ&siteID=JVFxdTr9V80-SDXH3N2CHZ0FjE59ZxA3sQ" 
+            fi
+        fi ;;
+    "🦾coursera-algorithm-specialization")
+        if [ $brow == "🦁brave" ]; then
+            brave "https://www.coursera.org/specializations/algorithms"
+        else
+            if [ $mode == "🌕window" ]; then
+                $BROWSER "--target" "window" "https://www.coursera.org/specializations/algorithms" 
+            else
+                $BROWSER "--target" "tab" "https://www.coursera.org/specializations/algorithms" 
+            fi
+        fi ;;
+    "📽yt-algorithm")
+        brave "https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb";;
+    "📽yt-dataStruter")
+        brave "https://www.youtube.com/watch?v=B31LgI4Y4DQ&t=88s";;
+    "📽yt-graph-theory-algorithm")
+        brave "https://www.youtube.com/watch?v=09_LlHjoEiY";;
+    "💾github-arch-installation-script")
+        if [ $brow == "🦁brave" ]; then
+            brave "https://github.com/tom5760/arch-install/blob/master/arch_install.sh"
+        else
+            if [ $mode == "🌕window" ]; then
+                $BROWSER "--target" "window" "https://github.com/tom5760/arch-install/blob/master/arch_install.sh" 
+            else
+                $BROWSER "--target" "tab" "https://github.com/tom5760/arch-install/blob/master/arch_install.sh" 
+            fi
+        fi ;;
+esac
+
+

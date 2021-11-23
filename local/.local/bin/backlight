@@ -1,0 +1,37 @@
+#!/bin/sh
+
+move=$(echo -e "up\ndown\ninfo" | rofi -dmenu -p "up or down")
+
+current_light=/sys/class/backlight/intel_backlight/brightness
+
+sudo chmod 666 $current_light $max_light
+
+current=$(cat $current_light)
+
+function up(){
+    if [ $current -ne 111000 ]; then
+        ((current+=15000))
+        echo $current >> $current_light
+    else
+        echo "the backlight is at the maximum"
+    fi
+}
+
+function down(){
+    if [ $current -ne 6000 ]; then
+        ((current-=15000))
+        echo $current >> $current_light
+    else
+        echo "the backlight is at the minimum"
+    fi
+}
+
+
+case $move in
+    up)
+        up ;;
+    down)
+        down ;;
+    info)
+        notify-send "$current" ;;
+esac

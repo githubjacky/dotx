@@ -6,6 +6,7 @@ declare -a reading=(
 📽yt-dataStruter
 📽yt-graph-theory-algorithm
 💾github-arch-installation-script
+🤴comic-rank-of-king
 )
 
 pick=$(printf "%s\n" "${reading[@]}" | rofi -dmenu -p "reading list📒 ")
@@ -61,6 +62,16 @@ case $pick in
                 $BROWSER "--target" "window" "https://github.com/tom5760/arch-install/blob/master/arch_install.sh" 
             else
                 $BROWSER "--target" "tab" "https://github.com/tom5760/arch-install/blob/master/arch_install.sh" 
+            fi
+        fi ;;
+    "🤴comic-rank-of-king")
+        if [ $brow == "🦁brave" ]; then
+            brave "https://www.baozimh.com/comic/guowangpaiming-shiricaofu"
+        else
+            if [ $mode == "🌕window" ]; then
+                $BROWSER "--target" "window" "https://www.baozimh.com/comic/guowangpaiming-shiricaofu" 
+            else
+                $BROWSER "--target" "tab" "https://www.baozimh.com/comic/guowangpaiming-shiricaofu" 
             fi
         fi ;;
 esac

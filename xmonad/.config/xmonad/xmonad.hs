@@ -158,7 +158,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 myLayout = avoidStruts (tiled ||| Mirror tiled ||| noBorders Full)
   where
      -- default tiling algorithm partitions the screen into two panes
-     tiled   = spacing 10 $gaps [(U, 10), (R, 10), (L, 10), (D, 10)] $ Tall nmaster delta ratio
+     tiled   = spacing 20 $gaps [(U, 20), (R, 20), (L, 20), (D, 20)] $ Tall nmaster delta ratio
      -- tiled   = spacing 10 $ Tall nmaster delta ratio
 
      -- The default number of windows in the master pane

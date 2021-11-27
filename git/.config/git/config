@@ -1,3 +1,8 @@
 [user]
 	name = opottghjk00
 	email = opottghjk00@tutanota.com
+[credential]
+	helper = store
+[github]
+	user = opottghjk00
+	token = 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

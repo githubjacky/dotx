@@ -9337,3 +9337,659 @@
 [2021-11-21 16:02:34.966] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
 [2021-11-21 16:11:21.663] [info] Quitting...
 [2021-11-21 16:11:21.664] [info] Killing child process
+[2021-11-28 01:05:27.642] [info] Checking for update
+[2021-11-28 01:05:28.577] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'latestVersionPath',
+  data: {
+    message: 'latestVersion.json path /home/jacky/.config/notion-app/notionAssetCache-v2/latestVersion.json'
+  }
+}
+[2021-11-28 01:05:28.583] [error] Error: Error: ENOENT: no such file or directory, open '/opt/Notion/resources/app-update.yml'
+[2021-11-28 01:05:28.586] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'currentVersionLoaded',
+  data: { version: '23.10.14.12' }
+}
+[2021-11-28 01:05:28.586] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'syncVersions',
+  data: {
+    message: 'Sync versions: assets.json path /home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets.json headers.json path /home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/headers.json'
+  }
+}
+[2021-11-28 01:05:28.599] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'currentSyncedAssetsJson',
+  data: { version: '23.10.14.12' }
+}
+[2021-11-28 01:05:29.373] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'syncVersionSameSkippingSync'
+}
+[2021-11-28 01:05:29.376] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest2',
+  data: {
+    message: 'Performing file request: /, abs path /home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/index-ko-KR-0bffb7eeaaeffbd38047.html'
+  }
+}
+[2021-11-28 01:05:29.401] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'syncVersionSameSkippingSync'
+}
+[2021-11-28 01:05:29.402] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest2',
+  data: {
+    message: 'Performing file request: /, abs path /home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/index-ko-KR-0bffb7eeaaeffbd38047.html'
+  }
+}
+[2021-11-28 01:05:29.489] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/731-b07794b55fe2713d09a5.js',
+    url: '/731-b07794b55fe2713d09a5.js'
+  }
+}
+[2021-11-28 01:05:29.490] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/app-5039e702d9c8b6bbd5ef.js',
+    url: '/app-5039e702d9c8b6bbd5ef.js'
+  }
+}
+[2021-11-28 01:05:29.492] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/app-fc0c12ea0feeadf51929.css',
+    url: '/app-fc0c12ea0feeadf51929.css'
+  }
+}
+[2021-11-28 01:05:29.493] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/print.b31f28aa.css',
+    url: '/print.b31f28aa.css'
+  }
+}
+[2021-11-28 01:05:29.506] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/731-b07794b55fe2713d09a5.js',
+    url: '/731-b07794b55fe2713d09a5.js'
+  }
+}
+[2021-11-28 01:05:29.508] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/app-5039e702d9c8b6bbd5ef.js',
+    url: '/app-5039e702d9c8b6bbd5ef.js'
+  }
+}
+[2021-11-28 01:05:29.510] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/app-fc0c12ea0feeadf51929.css',
+    url: '/app-fc0c12ea0feeadf51929.css'
+  }
+}
+[2021-11-28 01:05:29.512] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/print.b31f28aa.css',
+    url: '/print.b31f28aa.css'
+  }
+}
+[2021-11-28 01:05:30.233] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/markdown-linkify-it-27028e457536f08ee21f.js',
+    url: '/markdown-linkify-it-27028e457536f08ee21f.js'
+  }
+}
+[2021-11-28 01:05:30.234] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/markdown-linkify-it-27028e457536f08ee21f.js',
+    url: '/markdown-linkify-it-27028e457536f08ee21f.js'
+  }
+}
+[2021-11-28 01:05:30.439] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/primus-11bd7655d61c6a4f81ab.js',
+    url: '/primus-11bd7655d61c6a4f81ab.js'
+  }
+}
+[2021-11-28 01:05:30.442] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/primus-11bd7655d61c6a4f81ab.js',
+    url: '/primus-11bd7655d61c6a4f81ab.js'
+  }
+}
+[2021-11-28 01:05:32.811] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/prism-f12bf4fc61255de6736c.js',
+    url: '/prism-f12bf4fc61255de6736c.js'
+  }
+}
+[2021-11-28 01:05:33.629] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/analytics-segment-34c1e12fe6ef213cbaa4.js',
+    url: '/analytics-segment-34c1e12fe6ef213cbaa4.js'
+  }
+}
+[2021-11-28 01:05:33.648] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/177-da9553ac2569389ff9e5.js',
+    url: '/177-da9553ac2569389ff9e5.js'
+  }
+}
+[2021-11-28 01:05:33.650] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'performingFileRequest',
+  data: {
+    absolutePath: '/home/jacky/.config/notion-app/notionAssetCache-v2/23.10.14.12/assets/postRender-b325ea5461329118654c.js',
+    url: '/postRender-b325ea5461329118654c.js'
+  }
+}
+[2021-11-28 01:15:27.801] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 01:15:27.823] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 01:25:27.808] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 01:25:27.813] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 01:35:27.818] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 01:35:27.823] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 01:45:27.830] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 01:45:27.835] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 01:55:27.838] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 01:55:27.844] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 02:05:27.850] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 02:05:27.855] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 02:15:27.858] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 02:15:27.863] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 02:25:27.859] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 02:25:27.864] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 02:35:27.869] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 02:35:27.874] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 02:45:27.879] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 02:45:27.884] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 02:55:27.887] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 02:55:27.892] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 03:05:27.888] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 03:05:27.893] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 03:15:27.897] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 03:15:27.902] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 03:25:27.905] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 03:25:27.912] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 03:35:27.908] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 03:35:27.912] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 03:45:27.914] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 03:45:27.918] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 03:55:27.920] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 03:55:27.924] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 04:05:27.926] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 04:05:27.931] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 04:15:27.928] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 04:15:27.931] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 04:25:27.932] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 04:25:27.937] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 04:35:27.935] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 04:35:27.940] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 04:45:27.938] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 04:45:27.943] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 04:55:27.941] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 04:55:27.946] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 05:05:27.944] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 05:05:27.948] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 05:15:27.946] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 05:15:27.951] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 05:25:27.946] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 05:25:27.950] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 05:35:27.948] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 05:35:27.953] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 05:45:27.948] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 05:45:27.953] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 05:55:27.959] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 05:55:27.964] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 06:05:27.961] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 06:05:27.965] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 06:15:27.967] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 06:15:27.971] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 06:25:27.981] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 06:25:27.986] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 06:35:27.994] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 06:35:27.999] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 06:45:27.998] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 06:45:28.002] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 06:55:28.010] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 06:55:28.015] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 07:05:28.018] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 07:05:28.022] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 07:15:28.029] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 07:15:28.033] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 07:25:28.039] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 07:25:28.044] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 07:35:28.049] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 07:35:28.054] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 07:45:28.059] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 07:45:28.064] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 07:55:28.069] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 07:55:28.364] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 08:05:28.078] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 08:05:28.083] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 08:15:28.087] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 08:15:28.091] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 08:25:28.088] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 08:25:28.092] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 08:35:28.095] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 08:35:28.100] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 08:45:28.101] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 08:45:28.106] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 08:55:28.107] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 08:55:28.112] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 09:05:28.113] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 09:05:28.117] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 09:15:28.119] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 09:15:28.123] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 09:25:28.123] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 09:25:28.128] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 09:35:28.127] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 09:35:28.132] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 09:45:28.128] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 09:45:28.133] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 09:55:28.132] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 09:55:28.137] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 10:05:28.134] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 10:05:28.139] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 10:15:28.136] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 10:15:28.141] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 10:25:28.138] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 10:25:28.143] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 10:35:28.138] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 10:35:28.143] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 10:45:28.154] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 10:45:28.158] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 10:55:28.169] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 10:55:28.173] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 11:05:28.176] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 11:05:28.181] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 11:15:28.190] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 11:15:28.195] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 11:25:28.198] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 11:25:28.202] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 11:35:28.211] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 11:35:28.215] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 11:45:28.222] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 11:45:28.227] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 11:55:28.227] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 11:55:28.230] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 12:05:28.238] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 12:05:28.242] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 12:15:28.249] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 12:15:28.254] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 12:25:28.258] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 12:25:28.262] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 12:35:28.269] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 12:35:28.273] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 12:45:28.278] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 12:45:28.283] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 12:55:28.287] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 12:55:28.292] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 13:05:28.296] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 13:05:28.301] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 13:15:28.299] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 13:15:28.303] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 13:25:28.306] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 13:25:28.311] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 13:35:28.308] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 13:35:28.312] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 13:45:28.314] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 13:45:28.319] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 13:55:28.320] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 13:55:28.325] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 14:05:28.326] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 14:05:28.330] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 14:15:28.327] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 14:15:28.329] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 14:25:28.331] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 14:25:28.336] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 14:35:28.335] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 14:35:28.340] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 14:45:28.338] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 14:45:28.344] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 14:55:28.338] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 14:55:28.342] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 15:05:28.339] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 15:05:28.345] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 15:15:28.341] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 15:15:28.346] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 15:25:28.343] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 15:25:28.348] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 15:35:28.344] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 15:35:28.349] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 15:45:28.360] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 15:45:28.365] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 15:55:28.370] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 15:55:28.377] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 16:05:28.385] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 16:05:28.390] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 16:15:28.388] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 16:15:28.392] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 16:25:28.398] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 16:25:28.403] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 16:35:28.408] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 16:35:28.412] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 16:45:28.412] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 16:45:28.417] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 16:55:28.424] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 16:55:28.429] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 17:05:28.435] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 17:05:28.440] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 17:15:28.446] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 17:15:28.451] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 17:25:28.456] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 17:25:28.461] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 17:35:28.458] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 17:35:28.465] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 17:45:28.467] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 17:45:28.472] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 17:55:28.477] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 17:55:28.481] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 18:05:28.486] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 18:05:28.491] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 18:15:28.494] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 18:15:28.499] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 18:25:28.498] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 18:25:28.503] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 18:35:28.500] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 18:35:28.505] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 18:45:28.506] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 18:45:28.512] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 18:55:28.508] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 18:55:28.513] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 19:05:28.513] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 19:05:28.517] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 19:15:28.517] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 19:15:28.522] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 19:25:28.522] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 19:25:28.526] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 19:35:28.525] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 19:35:28.529] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 19:45:28.528] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 19:45:28.532] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 19:55:28.530] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 19:55:28.535] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 20:05:28.531] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 20:05:28.536] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 20:15:28.533] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 20:15:28.538] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 20:25:28.533] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 20:25:28.538] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 20:35:28.534] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 20:35:28.538] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 20:45:28.548] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 20:45:28.552] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 20:55:28.563] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 20:55:28.568] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 21:05:28.578] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 21:05:28.582] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 21:15:28.588] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 21:15:28.593] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 21:25:28.601] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 21:25:28.606] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 21:35:28.614] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 21:35:28.619] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 21:45:28.625] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 21:45:28.630] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 21:55:28.636] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 21:55:28.642] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 22:05:28.647] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 22:05:28.648] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 22:15:28.648] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 22:15:28.652] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 22:25:28.659] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 22:25:28.664] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 22:35:28.668] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 22:35:28.673] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 22:45:28.678] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 22:45:28.682] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 22:55:28.686] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 22:55:28.691] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 23:05:28.695] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 23:05:28.699] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 23:15:28.703] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 23:15:28.708] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 23:25:28.711] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 23:25:28.716] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 23:35:28.716] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 23:35:28.721] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 23:45:28.718] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 23:45:28.723] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-28 23:55:28.724] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-28 23:55:28.729] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 00:05:28.727] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 00:05:28.733] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 00:15:28.729] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 00:15:28.734] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 00:25:28.734] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 00:25:28.740] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 00:35:28.738] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 00:35:28.743] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 00:45:28.741] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 00:45:28.746] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 00:55:28.743] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 00:55:28.748] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 01:05:28.585] [info] Checking for update
+[2021-11-29 01:05:28.587] [error] Error: Error: ENOENT: no such file or directory, open '/opt/Notion/resources/app-update.yml'
+[2021-11-29 01:05:28.744] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 01:05:28.750] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 01:15:28.746] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 01:15:28.751] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 01:25:28.748] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 01:25:28.752] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 01:35:28.763] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 01:35:28.764] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 01:45:28.778] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 01:45:28.783] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 01:55:28.792] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 01:55:28.797] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 02:05:28.798] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 02:05:28.802] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 02:15:28.808] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 02:15:28.813] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 02:25:28.820] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 02:25:28.824] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 02:35:28.828] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 02:35:28.833] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 02:45:28.840] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 02:45:28.845] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 02:55:28.848] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 02:55:28.852] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 03:05:28.857] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 03:05:28.862] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 03:15:28.868] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 03:15:28.872] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 03:25:28.868] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 03:25:28.872] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 03:35:28.877] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 03:35:28.882] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 03:45:28.886] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 03:45:28.891] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 03:55:28.892] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 03:55:28.897] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 04:05:28.900] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 04:05:28.905] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 04:15:28.908] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 04:15:28.912] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 04:25:28.907] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 04:25:29.404] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 04:35:28.914] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 04:35:28.918] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 04:45:28.921] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 04:45:28.926] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 04:55:28.927] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 04:55:29.324] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 05:05:28.928] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 05:05:28.933] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 05:15:28.932] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 05:15:28.937] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 05:25:28.935] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 05:25:28.940] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 05:35:28.939] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 05:35:28.944] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 05:45:28.942] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 05:45:28.947] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 05:55:28.944] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 05:55:28.949] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 06:05:28.946] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 06:05:28.951] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 06:15:28.947] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 06:15:28.953] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 06:25:28.948] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 06:25:28.953] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 06:35:28.964] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 06:35:28.969] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 06:45:28.978] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 06:45:28.983] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 06:55:28.987] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 06:55:28.989] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 07:05:28.998] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 07:05:29.003] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 07:15:29.010] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 07:15:29.015] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 07:25:29.022] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 07:25:29.027] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 07:35:29.026] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 07:35:29.031] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 07:45:29.038] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 07:45:29.044] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 07:55:29.048] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 07:55:29.052] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 08:05:29.057] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 08:05:29.063] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 08:15:29.068] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 08:15:29.072] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 08:25:29.077] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 08:25:29.082] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 08:35:29.087] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 08:35:29.091] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 08:45:29.095] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 08:45:29.100] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 08:55:29.103] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 08:55:29.108] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 09:05:29.111] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 09:05:29.116] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 09:15:29.117] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 09:15:29.120] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 09:25:29.123] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 09:25:29.128] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 09:35:29.128] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 09:35:29.134] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 09:45:29.134] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 09:45:29.139] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 09:55:29.139] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 09:55:29.144] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 10:05:29.143] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 10:05:46.204] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 10:15:29.147] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 10:15:29.225] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 10:25:29.148] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 10:25:29.186] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 10:35:29.150] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 10:35:29.269] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 10:45:29.152] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 10:45:29.523] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 10:55:29.154] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 10:55:29.224] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 11:05:29.155] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 11:05:29.310] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 11:15:29.156] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 11:15:29.271] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 11:25:29.172] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 11:25:29.248] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 11:35:29.183] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 11:35:29.219] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 11:45:29.192] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 11:45:29.321] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 11:55:29.206] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 11:55:29.286] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 12:05:29.217] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 12:05:29.256] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 12:15:29.228] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 12:15:29.266] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 12:25:29.240] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 12:25:37.358] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable' }
+[2021-11-29 12:35:29.248] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 12:35:29.824] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'appUpdateAvailable',
+  data: { version: '23.10.14.13' }
+}
+[2021-11-29 12:35:31.960] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate2' }
+[2021-11-29 12:35:31.960] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'appUpdateDownloadComplete',
+  data: { version: '23.10.14.13' }
+}
+[2021-11-29 12:35:31.961] [info] {
+  level: 'info',
+  from: 'AssetCache',
+  type: 'installingAppUpdate',
+  data: { version: '23.10.14.13' }
+}
+[2021-11-29 12:45:29.250] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 12:45:29.899] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-11-29 12:55:25.806] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 12:55:26.522] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-11-29 13:05:25.817] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 13:05:26.387] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-11-29 13:15:25.828] [info] { level: 'info', from: 'AssetCache', type: 'checkingForAppUpdate' }
+[2021-11-29 13:15:26.459] [info] { level: 'info', from: 'AssetCache', type: 'noAppUpdateAvailable2' }
+[2021-11-29 13:18:35.371] [info] Quitting...
+[2021-11-29 13:18:35.373] [info] Killing child process

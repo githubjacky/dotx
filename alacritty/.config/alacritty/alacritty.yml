@@ -1,6 +1,6 @@
 import:
     - ~/.config/alacritty/themes/nord.yml
-background_opacity: 0.85
+background_opacity: 0.8
 
 font:
   normal:
@@ -19,7 +19,7 @@ font:
     family: JetBrains Mono Nerd Font Complete
     style: Bold Italic
   # Point size
-  size: 15.0
+  size: 20.0
 
   offset:
     x: 0

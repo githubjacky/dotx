@@ -8,12 +8,13 @@ import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 import XMonad.Layout.Spacing
 import XMonad.Layout.Gaps
+import XMonad.Layout.ResizableTile
+import XMonad.Layout.NoBorders
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import Data.Ratio
-import XMonad.Layout.NoBorders
 ------------------------------------------------------------------------
 -- main
 ------------------------------------------------------------------------
@@ -59,7 +60,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_Tab            ), spawn "rofi -show window")
 
     , ((modm,               xK_minus          ), incWindowSpacing 5)               -- increment the right-hand gap
+    , ((modm .|. shiftMask, xK_minus          ), sendMessage MirrorExpand)
     , ((modm,               xK_equal          ), decWindowSpacing 5)               -- decreme 
+    , ((modm .|. shiftMask, xK_equal          ), sendMessage MirrorShrink)
     , ((modm,               xK_y              ), spawn "st -e neomutt")
     , ((modm,               xK_u              ), spawn "st -e pulsemixer")
     , ((modm,               xK_i              ), spawn "st -e calcurse")
@@ -97,10 +100,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     , ((modm,               xK_s              ), sendMessage ToggleStruts)
     -- Swap the focused window with the next window
-    , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
+    , ((modm .|. shiftMask, xK_x     ), windows W.swapDown  )
 
     -- Swap the focused window with the previous window
-    , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    )
+    , ((modm .|. shiftMask, xK_z     ), windows W.swapUp    )
 
 
     -- Increment the number of windows in the master area
@@ -158,8 +161,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 myLayout = avoidStruts (tiled ||| Mirror tiled ||| noBorders Full)
   where
      -- default tiling algorithm partitions the screen into two panes
-     tiled   = spacing 10 $gaps [(U, 10), (R, 10), (L, 10), (D, 10)] $ Tall nmaster delta ratio
-     -- tiled   = spacing 10 $ Tall nmaster delta ratio
+     tiled = spacing 10 $gaps [(U, 10), (R, 10), (L, 10), (D, 10)] $ ResizableTall nmaster delta ratio []
 
      -- The default number of windows in the master pane
      nmaster = 1
@@ -168,7 +170,7 @@ myLayout = avoidStruts (tiled ||| Mirror tiled ||| noBorders Full)
      ratio   = 1/2
 
      -- Percent of screen to increment by when resizing panes
-     delta   = 3/100
+     delta   = 10/100
 ------------------------------------------------------------------------
 -- Window rules:
 
@@ -187,7 +189,7 @@ myLayout = avoidStruts (tiled ||| Mirror tiled ||| noBorders Full)
 myManageHook = composeAll
     [ className =? "st-256color"                 --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
      ,className =? "Pcmanfm"                     --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
-     ,className =? "notion-app"                  --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
+     ,resource  =? "notion-app"                  --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
      ,className =? "line.exe"                    --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
     ]
 

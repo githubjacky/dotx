@@ -17,7 +17,7 @@ notify &  # all system notify
 nitrogen --restore &  # wallpaper
 
 
-exec xmonad  # window manager
+exec xmonad # window manager
 
 
 

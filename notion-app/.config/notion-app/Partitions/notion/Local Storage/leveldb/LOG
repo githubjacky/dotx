@@ -1,0 +1,5 @@
+2021/12/12-16:09:31.596 35c Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2021/12/12-16:09:31.607 35c Recovering log #2811
+2021/12/12-16:09:31.611 35c Level-0 table #2815: started
+2021/12/12-16:09:31.621 35c Level-0 table #2815: 12574 bytes OK
+2021/12/12-16:09:31.631 35c Delete type=0 #2811

@@ -12,7 +12,7 @@ else
     if [ $pos == "one-monitor" ]; then
         xrandr --output "$intern" --off --output "$extern" --auto
     else
-        xrandr --output "$intern" --auto --below "$extern"
+        xrandr --output "$intern" --auto --left-of "$extern"
     fi
 fi
 

@@ -27,14 +27,15 @@ return require('packer').startup(function()
     --lsp
     use 'nvim-lua/plenary.nvim'
     use 'neovim/nvim-lspconfig'
-    use 'kabouzeid/nvim-lspinstall'
+    use 'williamboman/nvim-lsp-installer'
     use 'glepnir/lspsaga.nvim'
     use 'hrsh7th/nvim-compe'
         --have to be setup
 
     --theme
     use 'junegunn/rainbow_parentheses.vim'
-    use 'EdenEast/nightfox.nvim'
+    use {'EdenEast/nightfox.nvim',
+    }
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
         --have to be setup
 

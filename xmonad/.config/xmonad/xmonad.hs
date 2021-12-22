@@ -24,13 +24,13 @@ main = do
 -- global variables
 ------------------------------------------------------------------------
 myTerminal      = "alacritty"
-myBorderWidth   = 1
+myBorderWidth   = 5
 myModMask       = mod4Mask
 myWorkspaces    = ["1","2","3","4","5"]
 
 -- Border colors for unfocused and focused windows, respectively.
 myNormalBorderColor  = "#4c566a"
-myFocusedBorderColor = "#e8cb8b"
+myFocusedBorderColor = "#d8dee9"
 
 
 -- Whether focus follows the mouse pointer.
@@ -158,7 +158,8 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts (tiled ||| Mirror tiled ||| noBorders Full)
+myLayout = avoidStruts (tiled ||| noBorders Full)
+--- third layout: Mirror tiled
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled = spacing 10 $gaps [(U, 10), (R, 10), (L, 10), (D, 10)] $ ResizableTall nmaster delta ratio []

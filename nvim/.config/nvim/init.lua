@@ -19,18 +19,17 @@ require('tool')
 require('lsp')
 
 -- colorscheme
-
-local nightfox = require('nightfox')
-nightfox.setup{
+--nightfox
+require('nightfox').setup{
     fox = "nordfox",
     --fox = "nightfox",
-    transparent = true,
+    transparent = false,
     terminal_colors = true,
     styles = {
-        comments = "none", -- change style of comments to be italic
-        keywords = "bold", -- change style of keywords to be bold
-        functions = "italic,bold" -- styles can be a comma separated list
+    comments = "none", -- change style of comments to be italic
+    keywords = "bold", -- change style of keywords to be bold
+    functions = "italic,bold" -- styles can be a comma separated list
     }
 }
-nightfox.load()
---vim.cmd('colorscheme')
+
+require('nightfox').load()

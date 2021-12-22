@@ -1,11 +1,12 @@
 local wk = require("which-key")
 
 local n_keymap = {
-	b = {
+	j = {
 		name = 'basic',
 		c = {'viwU<esc>', 'capital'},
-		h = {'<cmd>set<space>nonumber<cr>', 'hide number'},
-		n = {'<cmd>set<space>number<cr>', 'toggle number'}
+		h = {'<cmd>bprevious<cr>', 'previous buffer'},
+		l = {'<cmd>bnext<cr>', 'next buffer'},
+		d = {'<cmd>bd<cr>', 'delete buffer'},
 	},
 	n = {   name = 'tree',
 		t = {'<cmd>NvimTreeToggle<cr>', 'nvimTree'},
@@ -26,7 +27,7 @@ local n_keymap = {
 	},
 	r = {'<cmd>Lspsaga rename<cr>', 'rename'},
 	t = {'<cmd>Lspsaga open_floaterm<cr>', 'termanal'},
-    q = {'<cmd>Lspsaga close_floaterm<cr>', 'close terminal'},
+        q = {'<cmd>Lspsaga close_floaterm<cr>', 'close terminal'},
 	l = {
 		name = "+lspSaga",
 		f = {'<cmd>Lspsaga lsp_finder<cr>', 'finder'},
@@ -62,11 +63,11 @@ local n_keymap = {
 		c = {'<cmd>Telescope<space>colorscheme<cr>', 'change colorscheme'},
 		m = {'<cmd>Telescope<space>marks<cr>', 'book mark'}
 	},
-	j = {
-		name = 'jupyter',
-		c = {'<Plug>JupyterExecute', 'execute cell'},
-		a = {'<Plug>JupyterExecuteAll', 'execute all'}
-	},
+	--j = {
+		--name = 'jupyter',
+		--c = {'<Plug>JupyterExecute', 'execute cell'},
+		--a = {'<Plug>JupyterExecuteAll', 'execute all'}
+	--},
 	d = {
 		name = 'dashboard-session',
 		s = {'<c-u>SessionSave<cr>', 'session-save'},

@@ -56,7 +56,7 @@ require'nvim-tree'.setup {
 
   view = {
     -- width of the window, can be either a number (columns) or a string in `%`, for left or right side placement
-    width = 22,
+    width = 15,
     -- height of the window, can be either a number (columns) or a string in `%`, for top or bottom side placement
     height = 20,
     -- side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
@@ -73,4 +73,4 @@ require'nvim-tree'.setup {
   }
 }
 
-vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=#2e3440 guifg=#3c4252")
+vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=#2e3440")

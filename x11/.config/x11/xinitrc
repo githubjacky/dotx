@@ -16,6 +16,8 @@ notify &  # all system notify
 
 nitrogen --restore &  # wallpaper
 
+echo "power on" | bluetoothctl &
+
 
 exec xmonad # window manager
 

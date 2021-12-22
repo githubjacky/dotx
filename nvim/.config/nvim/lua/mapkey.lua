@@ -22,9 +22,7 @@ map('i', '<Tab>', 'v:lua.smart_tab()', {expr = true, noremap = true})
 
 
 -- navigate amoung buffer
-map('n', '<tab>', '<cmd>bnext<cr>', {noremap=true})
-map('n', '<s-tab>', '<cmd>bprevious<cr>', {noremap=true})
-map('n', '<tab><tab>', '<cmd>bd<cr>', {noremap=true})
+map('n', '<tab-tab>', '<cmd>bd<cr>', {noremap=true})
 
 
 --remap the visual mode

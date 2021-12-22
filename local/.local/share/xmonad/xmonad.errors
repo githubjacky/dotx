@@ -1,7 +1,7 @@
 
-xmonad.hs:164:14: warning: [-Wdeprecations]
+xmonad.hs:165:14: warning: [-Wdeprecations]
     In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
     Deprecated: "Use spacingRaw instead."
     |
-164 |      tiled = spacing 10 $gaps [(U, 10), (R, 10), (L, 10), (D, 10)] $ ResizableTall nmaster delta ratio []
+165 |      tiled = spacing 10 $gaps [(U, 10), (R, 10), (L, 10), (D, 10)] $ ResizableTall nmaster delta ratio []
     |              ^^^^^^^

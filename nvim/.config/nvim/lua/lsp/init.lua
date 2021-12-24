@@ -1,5 +1,5 @@
 require('lsp.comple')
-require('lsp.lsp_setup')
 require('lsp.lspsaga')
 require('lsp.lsp_installer')
+require('lsp.lsp_setup')
 --require('lsp.snip')

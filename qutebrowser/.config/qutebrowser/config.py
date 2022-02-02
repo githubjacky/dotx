@@ -191,7 +191,7 @@ config.set('content.notifications.enabled', True, 'https://www.youtube.com')
 # Directory to save downloads to. If unset, a sensible OS-specific
 # default is used.
 # Type: Directory
-c.downloads.location.directory = '~/Download'
+c.downloads.location.directory = '$HOME/Downloads'
 
 # When to show the tab bar.
 # Type: String

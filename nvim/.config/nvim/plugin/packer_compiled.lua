@@ -130,7 +130,6 @@ _G.packer_plugins = {
     url = "https://github.com/hoob3rt/lualine.nvim"
   },
   ["nightfox.nvim"] = {
-    config = { "\27LJ\1\2«\1\0\0\3\0\6\0\t4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0003\2\4\0:\2\5\1>\0\2\1G\0\1\0\vstyles\1\0\3\rcomments\tnone\rkeywords\tbold\14functions\16italic,bold\1\0\3\16transparent\2\bfox\fnordfox\20terminal_colors\2\nsetup\rnightfox\frequire\0" },
     loaded = true,
     path = "/home/jacky/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
@@ -250,10 +249,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\1\2;\0\0\2\0\3\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0002\1\0\0>\0\2\1G\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: nightfox.nvim
-time([[Config for nightfox.nvim]], true)
-try_loadstring("\27LJ\1\2«\1\0\0\3\0\6\0\t4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0003\2\4\0:\2\5\1>\0\2\1G\0\1\0\vstyles\1\0\3\rcomments\tnone\rkeywords\tbold\14functions\16italic,bold\1\0\3\16transparent\2\bfox\fnordfox\20terminal_colors\2\nsetup\rnightfox\frequire\0", "config", "nightfox.nvim")
-time([[Config for nightfox.nvim]], false)
 -- Config for: spellsitter.nvim
 time([[Config for spellsitter.nvim]], true)
 try_loadstring("\27LJ\1\0029\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\16spellsitter\frequire\0", "config", "spellsitter.nvim")

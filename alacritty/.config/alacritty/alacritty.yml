@@ -1,6 +1,6 @@
 import:
     - ~/.config/alacritty/themes/nord.yml
-background_opacity: 0.8
+window.opacity: 1.0
 
 font:
   normal:

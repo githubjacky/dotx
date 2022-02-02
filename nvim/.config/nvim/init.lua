@@ -23,7 +23,7 @@ require('lsp')
 require('nightfox').setup{
     fox = "nordfox",
     --fox = "nightfox",
-    transparent = false,
+    transparent = true,
     terminal_colors = true,
     styles = {
     comments = "none", -- change style of comments to be italic

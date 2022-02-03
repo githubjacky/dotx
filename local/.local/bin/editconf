@@ -31,9 +31,9 @@ case $choice in
         cd $dir
         $editor -e $EDITOR $dir/xinitrc ;;
     "🍢setup_arch")
-        dir="$HOME/repo/github/os_set/arch"
+        dir="$HOME/repo/arch"
         cd $dir
-        $editor -e $EDITOR $dir/install.sh ;;
+        $editor -e $EDITOR $dir/simple_install.sh ;;
     "🍩polybar")
         dir="$HOME/.config/polybar"
         cd $dir

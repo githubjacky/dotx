@@ -7,7 +7,7 @@ window:
 font:
   normal:
     family: JetBrains Mono Nerd Font
-    style: Regular
+    style: Medium
 
   bold: 
     famil: JetBrains Mono Font Complete

@@ -14,7 +14,7 @@ export PATH="$HOME/Document/ntu_hw/introduction-to-computer/nand2tetris/tools/":
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="alacritty"
-export BROWSER="brave"
+export BROWSER="qutebrowser"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # chinese input

@@ -10,13 +10,13 @@ gcin &  # chinese input
 
 dunst &  # notify daemon
 
-monitorDetect &  # monitor arrange
+#monitorDetect &  # monitor arrange
 
 notify &  # all system notify
 
 nitrogen --restore &  # wallpaper
 
-echo "power on" | bluetoothctl &
+#echo "power on" | bluetoothctl &
 
 
 exec xmonad # window manager

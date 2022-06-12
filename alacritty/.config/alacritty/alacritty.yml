@@ -36,6 +36,12 @@ window:
     x: 2
     y: 2
 
+
+# shell:
+  # windows
+  # program: C:\Users\opott\scoop\shims\nu.EXE
+  # Linux
+
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.

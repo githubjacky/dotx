@@ -1,5 +1,0 @@
-require('lsp.comple')
-require('lsp.lspsaga')
-require('lsp.lsp_installer')
-require('lsp.lsp_setup')
---require('lsp.snip')

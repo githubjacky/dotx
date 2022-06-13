@@ -1,3 +1,12 @@
-2021/12/10-23:37:39.949 10803 Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
-2021/12/10-23:37:39.949 10803 Recovering log #4
-2021/12/10-23:37:39.996 10803 Reusing old log /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/000004.log 
+2022/06/13-12:21:33.605 16bf Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/13-12:21:33.605 16bf Recovering log #4
+2022/06/13-12:21:33.632 16bf Reusing old log /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/000004.log 
+2022/06/13-12:21:39.830 1666 Level-0 table #8: started
+2022/06/13-12:21:39.871 1666 Level-0 table #8: 1138916 bytes OK
+2022/06/13-12:21:39.874 1666 Delete type=0 #4
+2022/06/13-12:21:50.025 16bf Compacting 1@1 + 1@2 files
+2022/06/13-12:21:50.040 16bf Generated table #9@1: 3624 keys, 312865 bytes
+2022/06/13-12:21:50.040 16bf Compacted 1@1 + 1@2 files => 312865 bytes
+2022/06/13-12:21:50.042 16bf compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/06/13-12:21:50.042 16bf Delete type=2 #8
+2022/06/13-12:21:50.042 16bf Delete type=2 #5

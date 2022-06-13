@@ -1,0 +1,6 @@
+2022/06/13-04:10:45.383 c9a2 Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2022/06/13-04:10:45.384 c9a2 Recovering log #2816
+2022/06/13-04:10:45.385 c9a2 Reusing old log /home/jacky/.config/notion-app/Partitions/notion/Local Storage/leveldb/002816.log 
+2022/06/13-04:11:45.927 ca9e Level-0 table #2819: started
+2022/06/13-04:11:45.931 ca9e Level-0 table #2819: 13550 bytes OK
+2022/06/13-04:11:45.934 ca9e Delete type=0 #2816

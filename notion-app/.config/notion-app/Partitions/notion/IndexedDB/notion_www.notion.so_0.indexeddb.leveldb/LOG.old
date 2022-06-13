@@ -1,3 +1,3 @@
-2021/12/03-11:34:33.632 4b0e Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
-2021/12/03-11:34:33.632 4b0e Recovering log #4
-2021/12/03-11:34:33.652 4b0e Reusing old log /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/000004.log 
+2022/06/13-04:10:46.586 c9a1 Reusing MANIFEST /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2022/06/13-04:10:46.586 c9a1 Recovering log #4
+2022/06/13-04:10:46.603 c9a1 Reusing old log /home/jacky/.config/notion-app/Partitions/notion/IndexedDB/notion_www.notion.so_0.indexeddb.leveldb/000004.log 

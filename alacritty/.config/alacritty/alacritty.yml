@@ -73,13 +73,10 @@ key_bindings:
   - { key: Y,        mods: Control,       action: Copy             }
   - { key: Plus,     mods: Control,       action: IncreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-  - { key: S,        mods: Alt,           chars: "sudo aura -S " }
-  - { key: A,        mods: Alt,           chars: "sudo aura -A " }
-  - { key: R,        mods: Alt,           chars: "sudo aura -Rs "}
-  - { key: K,        mods: Alt,           chars: "km2217ob4b"      }
-  - { key: G,        mods: Alt,           chars: "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"}
+  - { key: S,        mods: Alt,           chars: "sudo pacman -S " }
+  - { key: A,        mods: Alt,           chars: "sudo yay -S " }
+  - { key: R,        mods: Alt,           chars: "sudo pacman -Rs "}
   - { key: N,        mods: Alt,           chars: "nmcli device wifi list"    }
-  - { key: M,        mods: Alt,           chars: "nmcli device wifi connect Jacky password dxff9ez0k0002"    }
   - { key: J,        mods: Alt,           chars: "jupytext --set-formats ipynb,py:percent" }
   - { key: Q,        mods: Alt,           chars: "xmonad --recompile; xmonad --restart" }
   - { key: P,        mods: Alt,           chars: "ssh bbsu@ptt.cc" }

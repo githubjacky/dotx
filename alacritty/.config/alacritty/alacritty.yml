@@ -21,7 +21,7 @@ font:
     family: JetBrains Mono Nerd Font
     style: Bold Italic
   # Point size
-  size: 13.0
+  size: 12.0
   #size: 15
 
   offset:

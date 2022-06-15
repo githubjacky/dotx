@@ -8,12 +8,12 @@ xsetroot -cursor_name left_ptr &  # shape of arrow
 
 gcin &  # chinese input
 
-# dunst &  # notify daemon
+dunst &  # notify daemon
 
 # monitorDetect &  # monitor arrange
 
 
-# notify &  # all system notify
+notify &  # all system notify
 
 nitrogen --restore &  # wallpaper
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 move=$(echo -e "up\ndown\ninfo" | rofi -dmenu -p "up or down")
 

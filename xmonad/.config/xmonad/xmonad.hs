@@ -24,7 +24,7 @@ main = do
 -- global variables
 ------------------------------------------------------------------------
 myTerminal      = "alacritty"
-myBorderWidth   = 5
+myBorderWidth   = 3
 myModMask       = mod4Mask
 myWorkspaces    = ["1","2","3","4","5"]
 
@@ -64,9 +64,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_equal          ), decWindowSpacing 5)               -- decreme 
     , ((modm .|. shiftMask, xK_equal          ), sendMessage MirrorShrink)
     , ((modm,               xK_y              ), spawn "st -e neomutt")
-    , ((modm,               xK_u              ), spawn "st -e pulsemixer")
-    , ((modm,               xK_i              ), spawn "st -e calcurse")
-    , ((modm .|. shiftMask, xK_i              ), spawn "st -e bluetoothctl")
+    , ((modm,               xK_u              ), spawn "st -e nmcli device wifi list")
+    , ((modm,               xK_i              ), spawn "st -e bluetoothctl")
     , ((modm,               xK_o              ), spawn "st -e bpytop")
     , ((modm,               xK_p              ), spawn "st -e ncmpcpp")
     , ((modm,               xK_h              ), sendMessage Shrink)
@@ -77,11 +76,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_semicolon      ), windows W.swapMaster)
     , ((modm .|. shiftMask, xK_semicolon      ), spawn "st -e ssh bbsu@ptt.cc")
     , ((modm,               xK_apostrophe     ), spawn "st -e ranger")
-    , ((modm,               xK_b              ), spawn "sh shut-dm")
-    , ((modm,               xK_n              ), spawn "sh editconf")
-    , ((modm,               xK_m              ), spawn "sh pass-dm")
+    , ((modm,               xK_b              ), spawn "shut-dm")
+    , ((modm,               xK_n              ), spawn "editconf")
+    , ((modm,               xK_m              ), spawn "pass-dm")
     , ((modm .|. shiftMask, xK_m              ), spawn "st -e glow")
-    , ((modm,               xK_comma          ), spawn "sh bookmark")
+    , ((modm,               xK_comma          ), spawn "bookmark")
     , ((modm,               xK_period         ), spawn "rofi -show run")
     , ((modm,               xK_slash          ), spawn "rofi -show drun")
 
@@ -162,7 +161,7 @@ myLayout = avoidStruts (tiled ||| noBorders Full)
 --- third layout: Mirror tiled
   where
      -- default tiling algorithm partitions the screen into two panes
-     tiled = spacing 10 $gaps [(U, 10), (R, 10), (L, 10), (D, 10)] $ ResizableTall nmaster delta ratio []
+     tiled = spacing 5 $gaps [(U, 5), (R, 5), (L, 5), (D, 5)] $ ResizableTall nmaster delta ratio []
 
      -- The default number of windows in the master pane
      nmaster = 1

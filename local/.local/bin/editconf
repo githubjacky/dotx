@@ -27,13 +27,13 @@ case $choice in
         cd $dir
         $editor -e $EDITOR $dir/xmonad.hs ;;
     "🧊xinitrc")
-        dir="$HOME/.config/x11"
+        dir="$HOME/.config/X11"
         cd $dir
         $editor -e $EDITOR $dir/xinitrc ;;
     "🍢setup_arch")
-        dir="$HOME/repo/arch"
+        dir="$HOME/repo/archSetup"
         cd $dir
-        $editor -e $EDITOR $dir/simple_install.sh ;;
+        $editor -e $EDITOR $dir/install.sh ;;
     "🍩polybar")
         dir="$HOME/.config/polybar"
         cd $dir

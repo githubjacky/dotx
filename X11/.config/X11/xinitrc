@@ -2,7 +2,7 @@
 
 # mpd ~/.config/mpd/mpd.conf &  # music daemon
 
-# picom -b --config ~/.config/picom/picom.conf --experimental-backends &  # handle opacity
+picom -b --config ~/.config/picom/picom.conf --experimental-backends &  # handle opacity
 
 xsetroot -cursor_name left_ptr &  # shape of arrow
 
@@ -10,14 +10,15 @@ gcin &  # chinese input
 
 dunst &  # notify daemon
 
-# monitorDetect &  # monitor arrange
-
-
-notify &  # all system notify
-
 nitrogen --restore &  # wallpaper
 
 echo "power on" | bluetoothctl &
+
+
+# personal shell script
+notify &  # all system notify
+
+monitorDetect &  # monitor arrange
 
 
 exec xmonad # window manager

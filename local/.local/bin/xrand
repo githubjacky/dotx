@@ -14,6 +14,7 @@ else
     else
         #xrandr --output "$intern" --right-of "$extern" --auto
         xrandr --output "$extern" --primary  --left-of "$intern"
+        notify-send "setup successfully"
     fi
 fi
 

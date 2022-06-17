@@ -67,5 +67,5 @@ source_theme_file "zsh-syntax-highlighting"
 
 # key bindings
 bindkey -s '^r' 'ranger_cd\n'
-bindkey '^f' autosuggest-accept
+bindkey '^j' autosuggest-accept
 

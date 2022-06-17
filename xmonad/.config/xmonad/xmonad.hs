@@ -189,8 +189,6 @@ myLayout = avoidStruts (tiled ||| noBorders Full)
 myManageHook = composeAll
     [ className =? "st-256color"                 --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
      ,className =? "Pcmanfm"                     --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
-     ,resource  =? "mupdf"                  --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
-     ,className =? "line.exe"                    --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
     ]
 
 -- Event handling

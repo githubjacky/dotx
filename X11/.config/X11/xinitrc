@@ -2,7 +2,7 @@
 
 # mpd ~/.config/mpd/mpd.conf &  # music daemon
 
-# picom -b --config ~/.config/picom/picom.conf --experimental-backends &  # handle opacity
+picom -b --experimental-backends &  # handle opacity
 
 xsetroot -cursor_name left_ptr &  # shape of arrow
 
@@ -16,9 +16,9 @@ echo "power on" | bluetoothctl &
 
 
 # personal shell script
-notify &  # all system notify
+# notify &  # all system notify
 
-monitorDetect &  # monitor arrange
+# monitorDetect &  # monitor arrange
 
 
 exec xmonad # window manager

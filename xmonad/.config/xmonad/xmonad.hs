@@ -187,7 +187,7 @@ myLayout = avoidStruts (tiled ||| noBorders Full)
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "st-256color"                 --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
+    [ className =? "st-256color"                 --> doRectFloat (W.RationalRect 0.12 0.1 0.755 0.81) 
      ,className =? "Pcmanfm"                     --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
     ]
 

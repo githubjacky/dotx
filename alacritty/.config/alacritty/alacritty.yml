@@ -21,8 +21,8 @@ font:
     family: JetBrains Mono Nerd Font
     style: Bold Italic
   # Point size
-  # size: 12.0
-  size: 15
+  size: 12.0
+  # size: 15.0
 
   offset:
     x: 0
@@ -41,7 +41,7 @@ window:
   # windows
   # program: C:\Users\opott\scoop\shims\nu.EXE
   # Linux
-program: /usr/bin/zsh
+program: /bin/zsh
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.

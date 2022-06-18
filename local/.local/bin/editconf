@@ -5,7 +5,7 @@ declare -a edit=(
 "☄️alacritty"
 "🦔xmonad"
 "🧊xinitrc"
-"🍢setup_arch"
+"🍢archSetup"
 "🍩polybar"
 "📒reading-list"
 "📎bookmark"

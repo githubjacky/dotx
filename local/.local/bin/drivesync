@@ -1,15 +1,29 @@
 #!/bin/sh
 
-cd "$HOME/Document/google-drive"
+cd "$HOME/Document/googleDrive"
 
-option=$(echo -e "download\nupload" | rofi -dmenu -p "movement🤠")
+
+option=$(echo -e "ntu\nopottGmail" | rofi -dmenu -p "option🤠")
+action=$(echo -e "download\nupload" | rofi -dmenu -p "action🤠")
 
 case $option in
-    "download")
-        grive -f
-        notify-send "download is finished" ;;
-    "upload")
-        grive -u 
-        notify-send "upload is finished" ;;
+    "ntu")
+        case $action in
+            "download")
+                grive -f
+                notify-send "download is finished" ;;
+            "upload")
+                grive -u 
+                notify-send "upload is finished" ;;
+        esac
+    "opottGmail")
+        case $action in
+            "download")
+                grive -f
+                notify-send "download is finished" ;;
+            "upload")
+                grive -u 
+                notify-send "upload is finished" ;;
+        esac
 esac
 

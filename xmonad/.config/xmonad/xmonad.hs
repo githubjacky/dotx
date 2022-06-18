@@ -63,10 +63,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_minus          ), sendMessage MirrorExpand)
     , ((modm,               xK_equal          ), decWindowSpacing 5)               -- decreme 
     , ((modm .|. shiftMask, xK_equal          ), sendMessage MirrorShrink)
-    , ((modm,               xK_y              ), spawn "st -e neomutt")
-    , ((modm,               xK_u              ), spawn "st -e nmcli device wifi list")
+    , ((modm,               xK_u     ), spawn "st -e ranger")
     , ((modm,               xK_i              ), spawn "st -e bluetoothctl")
-    , ((modm,               xK_o              ), spawn "st -e bpytop")
+    , ((modm,               xK_o              ), spawn "st -e btop")
     , ((modm,               xK_p              ), spawn "st -e ncmpcpp")
     , ((modm,               xK_h              ), sendMessage Shrink)
     , ((modm,               xK_j              ), windows W.focusDown)
@@ -74,12 +73,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_l              ), sendMessage Expand)
     -- Swap the focused window and the master window
     , ((modm,               xK_semicolon      ), windows W.swapMaster)
-    , ((modm .|. shiftMask, xK_semicolon      ), spawn "st -e ssh bbsu@ptt.cc")
-    , ((modm,               xK_apostrophe     ), spawn "st -e ranger")
+    , ((modm,               xK_apostrophe     ), spawn "st -e ssh bbsu@ptt.cc")
     , ((modm,               xK_b              ), spawn "shut-dm")
     , ((modm,               xK_n              ), spawn "editconf")
     , ((modm,               xK_m              ), spawn "pass-dm")
-    , ((modm .|. shiftMask, xK_m              ), spawn "st -e glow")
     , ((modm,               xK_comma          ), spawn "bookmark")
     , ((modm,               xK_period         ), spawn "rofi -show run")
     , ((modm,               xK_slash          ), spawn "rofi -show drun")
@@ -187,8 +184,10 @@ myLayout = avoidStruts (tiled ||| noBorders Full)
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "st-256color"                 --> doRectFloat (W.RationalRect 0.12 0.1 0.755 0.81) 
-     ,className =? "Pcmanfm"                     --> doRectFloat (W.RationalRect 0.13 0.1 0.755 0.81) 
+    [ className =? "st-256color"                 --> doRectFloat (W.RationalRect 0.15 0.16 0.7 0.7) 
+     ,className =? "Pcmanfm"                     --> doRectFloat (W.RationalRect 0.15 0.16 0.7 0.7) 
+     ,className =? "Nitrogen"                     --> doRectFloat (W.RationalRect 0.15 0.16 0.7 0.7) 
+     -- ,className =? "Nitrogen"                     --> doRectFloat (W.RationalRect 0.12 0.1 0.755 0.81) 
     ]
 
 -- Event handling

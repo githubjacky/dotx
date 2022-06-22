@@ -11,7 +11,7 @@ export PATH="/opt/miniconda3/bin":$PATH
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="alacritty"
-export BROWSER="waterfox"
+export BROWSER="waterfox-g4"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # chinese input

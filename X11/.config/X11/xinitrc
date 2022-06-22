@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# mpd ~/.config/mpd/mpd.conf &  # music daemon
+mpd ~/.config/mpd/mpd.conf &  # music daemon
 
 picom -b --experimental-backends &  # handle opacity
 

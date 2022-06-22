@@ -1,0 +1,45 @@
+music_directory    "~/Document/music"
+
+playlist_directory "~/.local/share/mpd/playlists"
+
+# Location for database
+ db_file            "~/.local/share/mpd/database"
+
+# Logs to system journal
+log_file           "syslog"
+pid_file          "~/.local/share/mpd/pid"
+
+state_file         "~/.local/share/mpd/state"
+sticker_file       "~/.local/share/mpd/sticker.sql"
+
+auto_update        "yes"
+auto_update_depth  "1"
+
+restore_paused     "yes"
+
+audio_output {
+  type             "alsa"
+  name             "ALSA"
+}
+
+audio_output {
+    type              "pulse"
+    name              "pulse audio"
+}
+
+
+audio_output {
+    type              "pipewire"
+    name              "Pipewire Sound Server"
+}
+
+
+audio_output {
+ type "fifo"
+ name "my_fifo"
+ path "/tmp/mpd.fifo"
+ format "44100:16:2"
+}
+
+bind_to_address "127.0.0.1"
+#port "6600"

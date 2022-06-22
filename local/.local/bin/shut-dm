@@ -30,6 +30,7 @@ case $choice in
         if [ "$(echo -e "Yes\nNo" | rofi -dmenu -p "suspend🔩")" == "Yes" ]; then
             systemctl suspend
             slock
+            echo "power on" | bluetoothctl
         fi
         ;;
      

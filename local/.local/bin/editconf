@@ -4,13 +4,18 @@ declare -a edit=(
 "🍄editconf"
 "☄️alacritty"
 "🦔xmonad"
+"🍀zshenv"
 "🧊xinitrc"
 "🍢archSetup"
 "🍩polybar"
-"📒reading-list"
 "📎bookmark"
+"🔧toolBar"
+"📒readingList"
+"🃏ntuBoookMark"
+"🐍pythonResources"
+"🫐juliaResources"
+"📉econData"
 "🔔notify"
-"🃏ntu_course_bookmark"
 "🧰other"
 )
 
@@ -18,46 +23,53 @@ choice=$(printf '%s\n' "${edit[@]}" | rofi -dmenu -p "edit the file🗂")
 editor="st"
 
 case $choice in
+    "🍄editconf")
+        dir="$HOME/.local/bin"
+        $editor -e $EDITOR $dir/editconf ;;
     "☄️alacritty")
         dir="$HOME/.config/alacritty"
-        cd $dir
         $editor -e $EDITOR $dir/alacritty.yml ;;
     "🦔xmonad")
         dir="$HOME/.config/xmonad"
-        cd $dir
         $editor -e $EDITOR $dir/xmonad.hs ;;
+    "🍀zshenv")
+        dir="$HOME/.config/zsh"
+        $editor -e $EDITOR $dir/zshenv ;;
     "🧊xinitrc")
         dir="$HOME/.config/X11"
-        cd $dir
         $editor -e $EDITOR $dir/xinitrc ;;
-    "🍢setup_arch")
+    "🍢archSetup")
         dir="$HOME/repo/archSetup"
-        cd $dir
         $editor -e $EDITOR $dir/install.sh ;;
     "🍩polybar")
         dir="$HOME/.config/polybar"
-        cd $dir
         $editor -e $EDITOR $dir/config.ini ;;
-    "🍄editconf")
-        dir="$HOME/.local/bin"
-        cd $dir
-        $editor -e $EDITOR $dir/editconf ;;
-    "📒reading-list")
-        dir="$HOME/.local/bin"
-        cd $dir
-        $editor -e $EDITOR $dir/reading-list ;;
     "📎bookmark")
-        dir="$HOME/.config/qutebrowser"
-        cd $dir
-        $editor -e $EDITOR $dir/quickmarks ;;
+        dir="$HOME/.local/bin"
+        $editor -e $EDITOR $dir/bookmark ;;
+    "🔧toolBar")
+        dir="$HOME/.local/share/BookMark"
+        $editor -e $EDITOR $dir/ToolBar ;;
+    "📒ReadingList")
+        dir="$HOME/.local/share/BookMark"
+        $editor -e $EDITOR $dir/ReadingList ;;
+    "🃏NTUBookMark")
+        dir="$HOME/.local/share/BookMark/NTUBookMark"
+        file=$(echo -e "📘JuniroFirst\n🔖JuniroSecond\n📚SeniorFirst" | rofi -dmenu -p "BookMark 📡:")
+        file=${file: 1}
+        $editor -e $EDITOR $dir/$file ;;
+    "🐍PythonResources")
+        dir="$HOME/.local/share/BookMark"
+        $editor -e $EDITOR $dir/python ;;
+    "🫐JuliaResources")
+        dir="$HOME/.local/share/BookMark"
+        $editor -e $EDITOR $dir/julia ;;
+    "📉EconData")
+        dir="$HOME/.local/share/BookMark"
+        $editor -e $EDITOR $dir/EconData ;;
     "🔔notify")
         dir="$HOME/.local/bin"
-        cd $dir
         $editor -e $EDITOR $dir/notify ;;
-    "🃏ntu_course_bookmark")
-        dir="$HOME/.local/bin"
-        cd $dir
-        $editor -e $EDITOR $dir/ntu_course_bookmark ;;
     "🧰other")
         $editor -e "ranger" ;;
 esac

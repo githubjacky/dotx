@@ -1,0 +1,3 @@
+--ignore-errors
+
+-o $HOME/Document/music/%(title)s.%(ext)s

@@ -63,10 +63,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_minus          ), sendMessage MirrorExpand)
     , ((modm,               xK_equal          ), decWindowSpacing 5)               -- decreme 
     , ((modm .|. shiftMask, xK_equal          ), sendMessage MirrorShrink)
-    , ((modm,               xK_u     ), spawn "st -e ranger")
+    , ((modm,               xK_u              ), spawn "st -e ranger")
     , ((modm,               xK_i              ), spawn "st -e bluetoothctl")
     , ((modm,               xK_o              ), spawn "st -e btop")
-    , ((modm,               xK_p              ), spawn "st -e ncmpcpp")
+    , ((modm,               xK_p              ), spawn "st -e pulsemixer")
+    , ((modm .|. shiftMask, xK_p              ), spawn "st -e ncmpcpp")
     , ((modm,               xK_h              ), sendMessage Shrink)
     , ((modm,               xK_j              ), windows W.focusDown)
     , ((modm,               xK_k              ), windows W.focusUp  )
@@ -80,10 +81,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_comma          ), spawn "bookmark")
     , ((modm,               xK_period         ), spawn "rofi -show run")
     , ((modm,               xK_slash          ), spawn "rofi -show drun")
-
-
-    -- launch gmrun
-    , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
 
      -- Rotate through the available layout algorithms
 

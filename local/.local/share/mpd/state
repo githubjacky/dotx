@@ -1,8 +1,5 @@
 sw_volume: 100
-audio_device_state:1:ALSA
-audio_device_state:1:pulse audio
-audio_device_state:1:Pipewire Sound Server
-audio_device_state:1:my_fifo
+audio_device_state:1:default detected output
 state: stop
 random: 0
 repeat: 0

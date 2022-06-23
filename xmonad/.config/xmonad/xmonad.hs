@@ -70,6 +70,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_p              ), spawn "st -e ncmpcpp")
     , ((modm,               xK_h              ), sendMessage Shrink)
     , ((modm,               xK_j              ), windows W.focusDown)
+    , ((modm .|. shiftMask, xK_j              ), spawn "st -e julia")
     , ((modm,               xK_k              ), windows W.focusUp  )
     , ((modm,               xK_l              ), sendMessage Expand)
     -- Swap the focused window and the master window

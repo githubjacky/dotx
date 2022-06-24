@@ -72,6 +72,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_j              ), windows W.focusDown)
     , ((modm .|. shiftMask, xK_j              ), spawn "st -e julia")
     , ((modm,               xK_k              ), windows W.focusUp  )
+    , ((modm .|. shiftMask, xK_k              ), spawn "julia -e \"import Pluto; Pluto.run()\"")
     , ((modm,               xK_l              ), sendMessage Expand)
     -- Swap the focused window and the master window
     , ((modm,               xK_semicolon      ), windows W.swapMaster)

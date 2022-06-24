@@ -28,6 +28,10 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_DOCUMENTS_DIR="$HOME/document"
+export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+export XDG_MUSIC_DIR="$HOME/document/music"
+export XDG_VIDEOS_DIR="$HOME/document/video"
 # disable filej
 export LESSHISTFILE=-
 # fix path

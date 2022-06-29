@@ -12,9 +12,7 @@ declare -a edit=(
 "🔧toolBar"
 "📒readingList"
 "🃏ntuBoookMark"
-"🐍pythonResources"
-"🫐juliaResources"
-"📉econData"
+"🪴boxMark"
 "🔔notify"
 "🧰other"
 )
@@ -49,27 +47,31 @@ case $choice in
         $editor -e $EDITOR $dir/bookmark ;;
     "🔧toolBar")
         dir="$HOME/.local/share/BookMark"
-        $editor -e $EDITOR $dir/ToolBar ;;
-    "📒ReadingList")
+        $editor -e $EDITOR $dir/toolBar ;;
+    "📒readingList")
         dir="$HOME/.local/share/BookMark"
-        $editor -e $EDITOR $dir/ReadingList ;;
+        $editor -e $EDITOR $dir/readingList ;;
     "🃏NTUBookMark")
         dir="$HOME/.local/share/BookMark/NTUBookMark"
-        file=$(echo -e "📘JuniroFirst\n🔖JuniroSecond\n📚SeniorFirst" | rofi -dmenu -p "BookMark 📡:")
+        file=$(echo -e "📘juniroFirst\n🔖juniroSecond\n📚seniorFirst" | rofi -dmenu -p "BookMark 📡:")
         file=${file: 1}
         $editor -e $EDITOR $dir/$file ;;
-    "🐍PythonResources")
-        dir="$HOME/.local/share/BookMark"
-        $editor -e $EDITOR $dir/python ;;
-    "🫐JuliaResources")
-        dir="$HOME/.local/share/BookMark"
-        $editor -e $EDITOR $dir/julia ;;
-    "📉EconData")
-        dir="$HOME/.local/share/BookMark"
-        $editor -e $EDITOR $dir/EconData ;;
     "🔔notify")
         dir="$HOME/.local/bin"
         $editor -e $EDITOR $dir/notify ;;
     "🧰other")
         $editor -e "ranger" ;;
+    "🪴boxMark")
+        bm=$(echo -e "🐍pythonResources\n🫐juliaResources\n📉econData\n🌎webDevelopment" | rofi -dmenu -p "BookMark 📡:")
+        dir="$HOME/.local/share/BookMark"
+        case $bm in
+            "🐍pythonResources")
+                $editor -e $EDITOR $dir/python ;;
+            "🫐juliaResources")
+                $editor -e $EDITOR $dir/julia ;;
+            "📉econData")
+                $editor -e $EDITOR $dir/econData ;;
+            "🌎webDevelopment")
+                $editor -e $EDITOR $dir/webDevelopment ;;
+        esac ;;
 esac

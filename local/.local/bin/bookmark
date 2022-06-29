@@ -1,8 +1,17 @@
 #!/bin/sh
 
+declare -a used=(
+"🐻github"
+"🐒kaggle"
+"📜notion"
+"📪ntu-mail"
+"🎬ntu-cool"
+"🦥ntu-wifi"
+)
+
 
 # pipe the dmenu
-Choice=$(printf '%s\n' "🔎search" "🔧toolBar" "📒readingList" "🃏ntuBookMark" "🐍pythonResources" "🫐juliaResources" "📉econData" | rofi -dmenu -p "BookMark 📡:")
+Choice=$(printf '%s\n' "🔎search" "🔧toolBar" "📒readingList" "🃏ntuBookMark" "🐍pythonResources" "🫐juliaResources" "📉econData" "🌎webDevelopment" "${used[@]}" | rofi -dmenu -p "BookMark 📡:")
 
 # create the function to get the bookmark
 get_BookMark() {
@@ -92,18 +101,32 @@ if [ "$Choice" == "🔎search" ]; then
                 $BROWSER "-new-tab" "https://en.wikipedia.org/wiki/$word"
             fi ;;
     esac
+elif [ "$Choice" == "🐻github" ]; then
+    $BROWSER "-new-tab" "https://github.com/opottghjk00?tab=repositories"
+elif [ "$Choice" == "🐒kaggle" ]; then
+    $BROWSER "-new-tab" "https://www.kaggle.com/"
+elif [ "$Choice" == "📜notion" ]; then
+    $BROWSER "-new-tab" "https://www.notion.so/summer-study-plan-070c5d09b7a6416683be80727a4e8b26"
+elif [ "$Choice" == "📪ntu-mail" ]; then
+    $BROWSER "-new-tab" "https://mail.ntu.edu.tw/owa/auth/logon.aspx?url=https%3A%2F%2Fmail.ntu.edu.tw%2Fowa%2F&reason=0"
+elif [ "$Choice" == "🎬ntu-cool" ]; then
+    $BROWSER "-new-tab" "https://cool.ntu.edu.tw/login/portal"
+elif [ "$Choice" == "🦥ntu-wifi" ]; then
+    $BROWSER "-new-tab" "https://www.ntu.edu.tw"
 elif [ "$Choice" == "🔧toolBar" ]; then
-    get_BookMark "$HOME/.local/share/BookMark/ToolBar"
+    get_BookMark "$HOME/.local/share/BookMark/toolBar"
 elif [ "$Choice" == "📒readingList" ]; then
-    get_BookMark "$HOME/.local/share/BookMark/ReadingList"
+    get_BookMark "$HOME/.local/share/BookMark/readingList"
 elif [ "$Choice" == "🃏ntuBookMark" ]; then
-    file=$(echo -e "📘JuniroFirst\n🔖JuniroSecond\n📚SeniorFirst" | rofi -dmenu -p "BookMark 📡:")
+    file=$(echo -e "📘juniroFirst\n🔖juniroSecond\n📚seniorFirst" | rofi -dmenu -p "BookMark 📡:")
     file=${file: 1}
-    get_BookMark "$HOME/.local/share/BookMark/NTUBookMark/$file"
+    get_BookMark "$HOME/.local/share/BookMark/ntuBookMark/$file"
 elif [ "$Choice" == "🐍pythonResources" ]; then
     get_BookMark "$HOME/.local/share/BookMark/python"
 elif [ "$Choice" == "🫐juliaResources" ]; then
     get_BookMark "$HOME/.local/share/BookMark/julia"
 elif [ "$Choice" == "📉econData" ]; then
-    get_BookMark "$HOME/.local/share/BookMark/EconData"
+    get_BookMark "$HOME/.local/share/BookMark/econData"
+elif [ "$Choice" == "🌎webDevelopment" ]; then
+    get_BookMark "$HOME/.local/share/BookMark/webDevelopment"
 fi

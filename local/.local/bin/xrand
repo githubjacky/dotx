@@ -13,7 +13,7 @@ else
         xrandr --output "$intern" --off --output "$extern" --auto
     else
         #xrandr --output "$intern" --right-of "$extern" --auto
-        xrandr --output "$extern" --primary  --left-of "$intern"
+        xrandr --auto --output "$extern" --primary --left-of "$intern"
         notify-send "setup successfully"
     fi
 fi

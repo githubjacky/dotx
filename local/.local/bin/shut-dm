@@ -3,7 +3,7 @@
 
 declare -a options=(
 "🗝lock"
-"⚒reboot"
+"🔧reboot"
 "🔌poweroff"
 "🕰suspend"
 )

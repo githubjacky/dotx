@@ -1,0 +1,5 @@
+#!/bin/sh
+
+source ~/.zshenv
+[[ -f "styles/main.css" ]] && rm styles/main.css
+node-sass "styles/main.scss" "styles/main.css"

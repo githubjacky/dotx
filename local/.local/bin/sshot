@@ -18,5 +18,5 @@ if [ $place == "🃏lecture-note" ]; then
     maim -s "$directory/$tar"
 else
     filename="$(rofi -dmenu -p "filname🪖: ")"
-    maim -s "$HOME/Document/picture/screenShot/$filename"
+    maim -s "$HOME/document/picture/screenShot/$filename"
 fi

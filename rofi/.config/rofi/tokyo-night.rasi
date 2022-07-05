@@ -1,0 +1,86 @@
+/* global settings and color variables */
+
+configuration {
+  display-run: "execute program  ";
+  display-drun: "lanuch application   ";
+  display-window: "switch window   ";
+  drun-display-format: "{icon} {name}";
+  font: "JetBrainsMono Nerd Font Medium 20";
+  modi: "window,run,drun";
+  show-icons: true;
+}
+
+* {
+   blue:             #a6e1ff;
+   darkblue:         #7DA6FF;
+   cyan:             #95e6cb;
+   lightcyan:        #7DA6FF;
+   green:            #9ece6a;
+   red:              #f7768e;
+
+   dark1:            #031523;
+   dark2:            #292e42;
+   dark3:            #8E96B6;
+   dark4:            #8E96B6;
+
+   light1:           #B4F9F8;
+
+   background-color: @dark1;
+   border-color:     @dark2;
+   text-color:       @dark3;
+   dark-text-color:  @dark4;
+   main-color:       @blue;
+   highlight:        @light1;
+   urgent-color:     @red;
+   selected-color:   @lightcyan;
+}
+
+element {
+  padding: 12;
+  text-color: @frost-3;
+}
+
+element-icon {
+    size: 2ch ;
+}
+
+element selected {
+  text-color: @aurora-3;
+}
+
+element-text {
+  padding: 2;
+  background-color: inherit;
+  text-color: inherit;
+}
+
+entry {
+  background-color: @polar-2;
+  padding: 12 0 12 3;
+  text-color: @frost-1;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  columns: 2;
+  lines: 8;
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @polar-2;
+  enabled: true;
+  font: "JetBrainsMono Nerd Font Medium 20";
+  padding: 12 0 0 12;
+  text-color: @frost-1;
+}
+
+window {
+  transparency: "real";
+}

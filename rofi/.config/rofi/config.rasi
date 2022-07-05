@@ -146,3 +146,4 @@ modi: "window,run";
 }
 
 @theme "nord"
+/* @theme "tokyo-night" */

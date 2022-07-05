@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+
+git add .
+echo "Enter the Commit Message"
+read message
+git commit -m "$message"
+echo "Enter the Name of the Branch"
+# read  branch
+branch="main"
+git push origin $branch
+
+
+
+
+

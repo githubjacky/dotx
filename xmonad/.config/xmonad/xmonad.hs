@@ -218,6 +218,7 @@ myLogHook = do
 myStartupHook = do
     spawn "sh ~/.config/polybar/launch.sh"
     spawn "nitrogen --restore"
+    spawn "picom -b --experimental-backends"
 ------------------------------------------------------------------------
 -- Override the PP values as you would otherwise, adding colors etc depending
 -- on  the statusbar used

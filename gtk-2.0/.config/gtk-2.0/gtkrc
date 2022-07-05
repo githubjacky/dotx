@@ -3,7 +3,7 @@
 
 include "/home/jacky/.gtkrc-2.0.mine"
 gtk-theme-name="Nordic-darker-v40"
-gtk-icon-theme-name="Zafiro-Icons-Dark"
+gtk-icon-theme-name="candy-icons"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Nordzy-cursors"
 gtk-cursor-theme-size=0

@@ -2,15 +2,11 @@
 
 mpd ~/.config/mpd/mpd.conf &  # music daemon
 
-picom -b --experimental-backends &  # handle opacity
-
 xsetroot -cursor_name left_ptr &  # shape of arrow
 
 gcin &  # chinese input
 
 dunst &  # notify daemon
-
-nitrogen --restore &  # wallpaper
 
 echo "power on" | bluetoothctl &
 

@@ -81,6 +81,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_n              ), spawn "editconf")
     , ((modm,               xK_m              ), spawn "pass-dm")
     , ((modm,               xK_comma          ), spawn "bookmark")
+    , ((modm .|. shiftMask, xK_comma          ), spawn "search")
     , ((modm,               xK_period         ), spawn "rofi -show run")
     , ((modm,               xK_slash          ), spawn "rofi -show drun")
 
@@ -102,7 +103,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 
     -- Increment the number of windows in the master area
-    , ((modm .|. shiftMask, xK_comma ), sendMessage (IncMasterN 1))
+    , ((modm .|. shiftMask, xK_s ), sendMessage (IncMasterN 1))
 
     -- Deincrement the number of windows in the master area
     , ((modm .|. shiftMask, xK_period), sendMessage (IncMasterN (-1)))
@@ -186,6 +187,7 @@ myManageHook = composeAll
     [ className =? "st-256color"                 --> doRectFloat (W.RationalRect 0.15 0.16 0.7 0.7) 
      ,className =? "Pcmanfm"                     --> doRectFloat (W.RationalRect 0.15 0.16 0.7 0.7) 
      ,className =? "Nitrogen"                     --> doRectFloat (W.RationalRect 0.15 0.16 0.7 0.7) 
+     ,className =? "Virt-manager"                     --> doRectFloat (W.RationalRect 0.15 0.16 0.7 0.7) 
      -- ,className =? "Nitrogen"                     --> doRectFloat (W.RationalRect 0.12 0.1 0.755 0.81) 
     ]
 

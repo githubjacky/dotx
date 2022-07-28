@@ -1,0 +1,70 @@
+#!/bin/sh
+
+
+pick=$(echo -e "d: duckduckgo\ngh: github\nyt: youtube\ndic: cambridge dictionary\naw: arch wiki\npac: pacman\naur: AUR\nwk: wiki\nsch: google scholar" | rofi -dmenu -p "search 🔎:")
+
+IFS=\  read -ra arr <<< $pick
+engine=${arr[0]}
+word=""
+for w in ${arr[@]}; do
+    [ $w != $engine ] && word+=" $w"
+done
+
+mode=$(echo -e "🌗tab\n🌕window" | rofi -dmenu -p "choose the mode🌛 ")
+case $engine in
+    "d")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://start.duckduckgo.com/?q=$word"
+        else
+            $BROWSER "-new-tab" "https://start.duckduckgo.com/?q=$word"
+        fi ;;
+    "gh")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://github.com/search?q=$word"
+        else
+            $BROWSER "-new-tab" "https://github.com/search?q=$word"
+        fi ;;
+    "yt")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://www.youtube.com/results?search_query=$word"
+        else
+            $BROWSER "-new-tab" "https://www.youtube.com/results?search_query=$word"
+        fi ;;
+    "dic")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://dictionary.cambridge.org/dictionary/english/$word"
+        else
+            $BROWSER "-new-tab" "https://dictionary.cambridge.org/dictionary/english/$word"
+        fi ;;
+    "aw")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://wiki.archlinux.org/index.php?search=$word"
+        else
+            $BROWSER "-new-tab" "https://wiki.archlinux.org/index.php?search=$word"
+        fi ;;
+    "pac")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://archlinux.org/packages/?sort=&q=$word&maintainer=&flagged="
+        else
+            $BROWSER "-new-tab" "https://archlinux.org/packages/?sort=&q=$word&maintainer=&flagged="
+        fi ;;
+    "aur")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://aur.archlinux.org/packages?O=0&K=$word"
+        else
+            $BROWSER "-new-tab" "https://aur.archlinux.org/packages?O=0&K=$word"
+        fi ;;
+    "wk")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://en.wikipedia.org/wiki/$word"
+        else
+            $BROWSER "-new-tab" "https://en.wikipedia.org/wiki/$word"
+        fi ;;
+    "sch")
+        if [ $mode == "🌕window" ]; then
+            $BROWSER "-new-window" "https://scholar.google.com.tw/scholar?q=$word"
+
+        else
+            $BROWSER "-new-tab" "https://scholar.google.com.tw/scholar?q=$word"
+        fi ;;
+esac

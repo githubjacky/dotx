@@ -5,16 +5,20 @@ extern=HDMI-1
 show=false
 
 if xrandr | grep "$extern disconnected"; then
-    xrandr --output "$extern" --off --output "$intern" --primary
+    xrandr --output "$extern" --off --output "$intern" --auto
     notify-send "HDMI-1 is not connected"
 else
-    pos=$(echo -e "one-monitor\ndual-monitor" | rofi -dmenu -p "workflow 🦖:")
+    pos=$(echo -e "one-monitor\ndual-monitor\nreturn" | rofi -dmenu -p "workflow 🦖:")
     if [ $pos == "one-monitor" ]; then
+        notify-send "setup successfully"
         xrandr --output "$intern" --off --output "$extern" --auto
-    else
+    elif [ $pos == "dual-monitor" ]; then
         #xrandr --output "$intern" --right-of "$extern" --auto
         xrandr --auto --output "$extern" --primary --left-of "$intern"
         notify-send "setup successfully"
+    else
+        xrandr --output "$extern" --off --output "$intern" --auto
+        notify-send "change successfully"
     fi
 fi
 

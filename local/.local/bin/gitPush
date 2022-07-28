@@ -9,8 +9,3 @@ echo "Enter the Name of the Branch"
 # read  branch
 branch="main"
 git push origin $branch
-
-
-
-
-

@@ -7,11 +7,12 @@ declare -a used=(
 "📪ntu-mail"
 "🎬ntu-cool"
 "🦥ntu-wifi"
+"🚀neetCode"
 )
 
 
 # pipe the dmenu
-Choice=$(printf '%s\n' "🔎search" "🔧toolBar" "📒readingList" "🃏ntuBookMark" "🐍pythonResources" "🫐juliaResources" "📉econData" "🌎webDevelopment" "${used[@]}" | rofi -dmenu -p "BookMark 📡:")
+Choice=$(printf '%s\n' "🔧toolBar" "📒readingList" "🃏ntuBookMark" "🐍pythonResources" "🫐juliaResources" "📉econData" "🌎webDevelopment" "${used[@]}" | rofi -dmenu -p "BookMark 📡:")
 
 # create the function to get the bookmark
 get_BookMark() {
@@ -40,69 +41,8 @@ get_BookMark() {
 }
 
 # reading-list or bookmar
-if [ "$Choice" == "🔎search" ]; then
-    pick=$(echo -e "d: duckduckgo\ngh: github\nyt: youtube\ndic: cambridge dictionary\naw: arch wiki\npac: pacman\naur: AUR\nwk: wiki" | rofi -dmenu -p "search 🔎:")
-
-    IFS=\  read -ra arr <<< $pick
-    engine=${arr[0]}
-    word=""
-    for w in ${arr[@]}; do
-        [ $w != $engine ] && word+=" $w"
-    done
-
-    mode=$(echo -e "🌗tab\n🌕window" | rofi -dmenu -p "choose the mode🌛 ")
-    case $engine in
-        "d")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://start.duckduckgo.com/?q=$word"
-            else
-                $BROWSER "-new-tab" "https://start.duckduckgo.com/?q=$word"
-            fi ;;
-        "gh")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://github.com/search?q=$word"
-            else
-                $BROWSER "-new-tab" "https://github.com/search?q=$word"
-            fi ;;
-        "yt")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://www.youtube.com/results?search_query=$word"
-            else
-                $BROWSER "-new-tab" "https://www.youtube.com/results?search_query=$word"
-            fi ;;
-        "dic")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://dictionary.cambridge.org/dictionary/english/$word"
-            else
-                $BROWSER "-new-tab" "https://dictionary.cambridge.org/dictionary/english/$word"
-            fi ;;
-        "aw")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://wiki.archlinux.org/index.php?search=$word"
-            else
-                $BROWSER "-new-tab" "https://wiki.archlinux.org/index.php?search=$word"
-            fi ;;
-        "pac")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://archlinux.org/packages/?sort=&q=$word&maintainer=&flagged="
-            else
-                $BROWSER "-new-tab" "https://archlinux.org/packages/?sort=&q=$word&maintainer=&flagged="
-            fi ;;
-        "aur")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://aur.archlinux.org/packages?O=0&K=$word"
-            else
-                $BROWSER "-new-tab" "https://aur.archlinux.org/packages?O=0&K=$word"
-            fi ;;
-        "wk")
-            if [ $mode == "🌕window" ]; then
-                $BROWSER "-new-window" "https://en.wikipedia.org/wiki/$word"
-            else
-                $BROWSER "-new-tab" "https://en.wikipedia.org/wiki/$word"
-            fi ;;
-    esac
-elif [ "$Choice" == "🐻github" ]; then
-    $BROWSER "-new-tab" "https://github.com/opottghjk00?tab=repositories"
+if [ "$Choice" == "🐻github" ]; then
+    $BROWSER "-new-tab" "https://github.com/githubjacky?tab=repositories"
 elif [ "$Choice" == "🐒kaggle" ]; then
     $BROWSER "-new-tab" "https://www.kaggle.com/"
 elif [ "$Choice" == "📜notion" ]; then
@@ -113,6 +53,8 @@ elif [ "$Choice" == "🎬ntu-cool" ]; then
     $BROWSER "-new-tab" "https://cool.ntu.edu.tw/login/portal"
 elif [ "$Choice" == "🦥ntu-wifi" ]; then
     $BROWSER "-new-tab" "https://www.ntu.edu.tw"
+elif [ "$Choice" == "🚀neetCode" ]; then
+    $BROWSER "-new-tab" "https://neetcode.io/"
 elif [ "$Choice" == "🔧toolBar" ]; then
     get_BookMark "$HOME/.local/share/BookMark/toolBar"
 elif [ "$Choice" == "📒readingList" ]; then
